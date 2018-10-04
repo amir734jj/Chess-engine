@@ -17,5 +17,7 @@ namespace ChessEngine.Models.Pieces
             TeamEnum = teamEnum;
             Position = position;
         }
+        
+        public object Clone() => MemberwiseClone();
     }
 }

@@ -11,6 +11,7 @@
         </e>
         <e p="ChessEngine.csproj" t="IncludeRecursive" />
         <e p="Extensions" t="Include">
+          <e p="BoardExtensions.cs" t="Include" />
           <e p="LinqExtension.cs" t="Include" />
           <e p="PieceExtension.cs" t="Include" />
           <e p="PositionExtension.cs" t="Include" />

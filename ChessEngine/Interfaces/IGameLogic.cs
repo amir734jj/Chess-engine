@@ -5,6 +5,6 @@ namespace ChessEngine.Interfaces
 {
     public interface IGameLogic
     {
-        void Play(Board board, TeamEnum teamEnum);
+        Board Play(Board board, TeamEnum teamEnum);
     }
 }

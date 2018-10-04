@@ -6,6 +6,20 @@ namespace ChessEngine.Utilities
 {
     public static class BoardUtilities
     {
+        public static Board ApplyAction(Board board, Movement movement)
+        {
+            // Clone the board
+            var clone = (Board) board.Clone();
+
+            // Remove exisiting piece
+            clone.Matrix[movement.BeforePosition.I][movement.BeforePosition.J] = null;
+
+            // Updated cloned board
+            clone.Matrix[movement.BeforePosition.I][movement.BeforePosition.J] = movement.Piece;
+
+            return clone;
+        }
+        
         /// <summary>
         /// Validates an action
         /// </summary>

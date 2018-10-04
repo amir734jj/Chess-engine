@@ -1,9 +1,10 @@
+using System;
 using System.Collections.Generic;
 using ChessEngine.Models.Enums;
 
 namespace ChessEngine.Models.Interfaces
 {
-    public interface IPiece
+    public interface IPiece : ICloneable
     {
         PieceNameEnum PieceNameEnum { get; }
         

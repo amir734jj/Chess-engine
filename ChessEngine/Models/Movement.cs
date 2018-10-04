@@ -1,9 +1,10 @@
+using System;
 using ChessEngine.Models.Enums;
 using ChessEngine.Models.Interfaces;
 
 namespace ChessEngine.Models
 {
-    public class Movement
+    public class Movement : ICloneable
     {
         public IPiece Piece { get; set; }
         
@@ -14,5 +15,7 @@ namespace ChessEngine.Models
         public Position AfterPosition { get; set; }
         
         public MovementTypeEnum MovementTypeEnum { get; set; }
+        
+        public object Clone() => MemberwiseClone();
     }
 }

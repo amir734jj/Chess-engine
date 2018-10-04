@@ -13,7 +13,7 @@ namespace ChessEngine.Logic
 {
     public class PieceActionLogic : IPieceActionLogic
     {
-        private IEnumerable<Position> GetActions(Board board, IPiece piece)
+        public IEnumerable<Position> GetActions(Board board, IPiece piece)
         {
             switch (piece.PieceNameEnum)
             {
@@ -83,6 +83,27 @@ namespace ChessEngine.Logic
             return GetActions(board, piece)
                 // Remove invalid actions
                 .Where(position => ValidateAction(board, piece, position));
+        }
+
+        /// <summary>
+        /// Returns valid actions wrapped as movements
+        /// </summary>
+        /// <param name="board"></param>
+        /// <param name="piece"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public IEnumerable<Movement> GetValidMovements(Board board, IPiece piece)
+        {
+            return GetValidActions(board, piece)
+                .Select(x => new Movement
+                {
+                    Piece = piece,
+                    PieceNameEnum = piece.PieceNameEnum,
+                    AfterPosition = x,
+                    BeforePosition = piece.Position,
+                    // TODO
+                    MovementTypeEnum = MovementTypeEnum.Simple
+                });
         }
     }
 }
