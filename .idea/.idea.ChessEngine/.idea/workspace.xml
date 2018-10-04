@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="52b447e5-1dd5-4b0a-8acd-b2c4886fdee6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Builders/BoardBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Extensions/LinqExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Extensions/PieceExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Extensions/PositionExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Interfaces/IBoardBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Board.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Enums/MovementTypeEnum.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Enums/PieceNameEnum.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Enums/TeamEnum'.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Game.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Interfaces/IPiece.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Movement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Bishop.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/King.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Knight.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Pawn.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Queen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Rook.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Position.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-851072088">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="47" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="47" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="3292" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="3292" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Builders/BoardBuilder.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+              <folding>
+                <marker date="1538620565910" expanded="false" signature="6:260" ph="..." />
+                <marker date="1538620565910" expanded="true" signature="292:3894" ph="{...}" />
+                <marker date="1538620565910" expanded="true" signature="340:3892" ph="{...}" />
+                <marker date="1538620565910" expanded="true" signature="426:540" ph="/// Creates a new instance of a board ... " />
+                <marker date="1538620565910" expanded="true" signature="577:838" ph="{...}" />
+                <marker date="1538620565910" expanded="true" signature="848:1048" ph="/// Sets up the initial board ... " />
+                <marker date="1538620565910" expanded="true" signature="1108:3886" ph="{...}" />
+                <marker date="1538620565910" expanded="true" signature="1145:3876" ph="{...}" />
+                <marker date="1538620565910" expanded="true" signature="1248:2029" ph="{...}" />
+                <marker date="1538620565910" expanded="true" signature="2969:3750" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="944">
+              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+              <folding>
+                <marker date="1538626893818" expanded="true" signature="6:308" ph="..." />
+                <marker date="1538626893818" expanded="true" signature="337:3495" ph="{...}" />
+                <marker date="1538626893818" expanded="true" signature="393:3493" ph="{...}" />
+                <marker date="1538626893818" expanded="true" signature="475:2956" ph="{...}" />
+                <marker date="1538626893818" expanded="true" signature="526:2946" ph="{...}" />
+                <marker date="1538626893818" expanded="true" signature="651:885" ph="{...}" />
+                <marker date="1538626893818" expanded="true" signature="1154:1332" ph="{...}" />
+                <marker date="1538626893818" expanded="true" signature="1620:1798" ph="{...}" />
+                <marker date="1538626893818" expanded="true" signature="1968:2274" ph="{...}" />
+                <marker date="1538626893818" expanded="true" signature="2386:2798" ph="{...}" />
+                <marker date="1538626893818" expanded="true" signature="2974:3225" ph="/// Returns valid actions ... " />
+                <marker date="1538626893818" expanded="true" signature="3305:3487" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding>
+                <marker date="1538626865770" expanded="true" signature="6:101" ph="..." />
+                <marker date="1538626865770" expanded="true" signature="130:567" ph="{...}" />
+                <marker date="1538626865770" expanded="true" signature="172:565" ph="{...}" />
+                <marker date="1538626865770" expanded="true" signature="235:559" ph="{...}" />
+                <marker date="1538626865770" expanded="true" signature="275:549" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+              <folding>
+                <marker date="1538626847154" expanded="true" signature="6:57" ph="..." />
+                <marker date="1538626847154" expanded="true" signature="91:190" ph="{...}" />
+                <marker date="1538626847154" expanded="true" signature="125:188" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/MovementTypeEnum.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="32" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="32" />
+              <folding>
+                <marker date="1538626189450" expanded="true" signature="34:117" ph="{...}" />
+                <marker date="1538626189450" expanded="true" signature="69:115" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Movement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding>
+                <marker date="1538626203794" expanded="false" signature="6:68" ph="..." />
+                <marker date="1538626203794" expanded="true" signature="98:443" ph="{...}" />
+                <marker date="1538626203794" expanded="true" signature="126:441" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="38" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="38" />
+              <folding>
+                <marker date="1538625969909" expanded="true" signature="6:96" ph="..." />
+                <marker date="1538625969909" expanded="true" signature="130:259" ph="{...}" />
+                <marker date="1538625969909" expanded="true" signature="171:257" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/LinqExtension.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+              <folding>
+                <marker date="1538625198867" expanded="false" signature="6:47" ph="..." />
+                <marker date="1538625198867" expanded="true" signature="81:971" ph="{...}" />
+                <marker date="1538625198867" expanded="true" signature="121:969" ph="{...}" />
+                <marker date="1538625198867" expanded="true" signature="136:341" ph="/// ForEach for IEnumerable ... " />
+                <marker date="1538625198867" expanded="true" signature="429:518" ph="{...}" />
+                <marker date="1538625198867" expanded="true" signature="536:778" ph="/// Convert IEnumerable to HashSet ... " />
+                <marker date="1538625198867" expanded="true" signature="890:963" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/PositionExtension.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <marker date="1538625231298" expanded="true" signature="59:1896" ph="{...}" />
+                <marker date="1538625231298" expanded="true" signature="103:1894" ph="{...}" />
+                <marker date="1538625231298" expanded="true" signature="118:368" ph="/// Increments the I property of position and returns a new position with updated props ... " />
+                <marker date="1538625231298" expanded="true" signature="475:550" ph="{...}" />
+                <marker date="1538625231298" expanded="true" signature="561:811" ph="/// Increments the J property of position and returns a new position with updated props ... " />
+                <marker date="1538625231298" expanded="true" signature="918:993" ph="{...}" />
+                <marker date="1538625231298" expanded="true" signature="1012:1262" ph="/// Decrements the I property of position and returns a new position with updated props ... " />
+                <marker date="1538625231298" expanded="true" signature="1369:1444" ph="{...}" />
+                <marker date="1538625231298" expanded="true" signature="1455:1705" ph="/// Decrements the J property of position and returns a new position with updated props ... " />
+                <marker date="1538625231298" expanded="true" signature="1812:1887" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <marker date="1538626944610" expanded="true" signature="6:98" ph="..." />
+                <marker date="1538626944610" expanded="true" signature="131:1461" ph="{...}" />
+                <marker date="1538626944610" expanded="true" signature="172:1459" ph="{...}" />
+                <marker date="1538626944610" expanded="true" signature="187:413" ph="/// Validates an action ... " />
+                <marker date="1538626944610" expanded="true" signature="501:1453" ph="{...}" />
+                <marker date="1538626944610" expanded="true" signature="654:711" ph="{...}" />
+                <marker date="1538626944610" expanded="true" signature="788:846" ph="{...}" />
+                <marker date="1538626944610" expanded="true" signature="925:983" ph="{...}" />
+                <marker date="1538626944610" expanded="true" signature="1110:1168" ph="{...}" />
+                <marker date="1538626944610" expanded="true" signature="1182:1303" ph="/* Cannot override the piece from the same team ... */" />
+                <marker date="1538626944610" expanded="true" signature="1359:1417" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Interfaces/IPiece.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Board.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Pawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/PieceNameEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IBoardBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Position.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/King.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Queen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Rook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Bishop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Knight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Builders/BoardBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Extensions/PieceExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Extensions/PositionExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/MovementTypeEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Extensions/LinqExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/TeamEnum'.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Game.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Rooks.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Enums/PieceNameEnum.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstant.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Extensions/LiqExtension.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Enums/TeamEnum'.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Position.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Game.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Interfaces/IBoardBuilder.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Builders/BoardBuilder.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Interfaces/IPiece.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Bishop.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/King.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Knight.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Pawn.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Queen.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Rook.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Board.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Extensions/PieceExtension.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Extensions/LinqExtension.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Extensions/PositionExtension.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Enums/MovementTypeEnum.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Movement.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="812" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Utilities" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52b447e5-1dd5-4b0a-8acd-b2c4886fdee6" name="Default Changelist" comment="" />
+      <created>1538587110357</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538587110357</updated>
+      <workItem from="1538587111642" duration="2371000" />
+      <workItem from="1538620430055" duration="4302000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6673000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="812" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Class1.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <marker date="1538587927138" expanded="true" signature="79:132" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/TeamEnum'.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="24" />
+          <folding>
+            <marker date="1538588465483" expanded="true" signature="61:102" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Game.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <marker date="1538589502560" expanded="true" signature="28:107" ph="{...}" />
+            <marker date="1538589502560" expanded="true" signature="52:105" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IBoardBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1538620527148" expanded="true" signature="59:141" ph="{...}" />
+            <marker date="1538620527148" expanded="true" signature="96:139" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Interfaces/IPiece.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <marker date="1538620643006" expanded="false" signature="6:65" ph="..." />
+            <marker date="1538620643006" expanded="true" signature="106:280" ph="{...}" />
+            <marker date="1538620643006" expanded="true" signature="136:278" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Bishop.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding>
+            <marker date="1538620646950" expanded="false" signature="6:102" ph="..." />
+            <marker date="1538620646950" expanded="true" signature="139:518" ph="{...}" />
+            <marker date="1538620646950" expanded="true" signature="174:516" ph="{...}" />
+            <marker date="1538620646950" expanded="true" signature="424:510" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/King.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <marker date="1538620652677" expanded="false" signature="6:102" ph="..." />
+            <marker date="1538620652677" expanded="true" signature="139:504" ph="{...}" />
+            <marker date="1538620652677" expanded="true" signature="172:502" ph="{...}" />
+            <marker date="1538620652677" expanded="true" signature="410:496" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Knight.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding>
+            <marker date="1538620656652" expanded="false" signature="6:102" ph="..." />
+            <marker date="1538620656652" expanded="true" signature="139:516" ph="{...}" />
+            <marker date="1538620656652" expanded="true" signature="174:514" ph="{...}" />
+            <marker date="1538620656652" expanded="true" signature="422:508" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Rook.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <marker date="1538620669053" expanded="false" signature="6:102" ph="..." />
+            <marker date="1538620669053" expanded="true" signature="139:512" ph="{...}" />
+            <marker date="1538620669053" expanded="true" signature="172:510" ph="{...}" />
+            <marker date="1538620669053" expanded="true" signature="418:504" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Queen.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <marker date="1538620664527" expanded="false" signature="6:102" ph="..." />
+            <marker date="1538620664527" expanded="true" signature="139:507" ph="{...}" />
+            <marker date="1538620664527" expanded="true" signature="173:505" ph="{...}" />
+            <marker date="1538620664527" expanded="true" signature="413:499" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Pawn.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <marker date="1538620660485" expanded="false" signature="6:102" ph="..." />
+            <marker date="1538620660485" expanded="true" signature="139:512" ph="{...}" />
+            <marker date="1538620660485" expanded="true" signature="172:510" ph="{...}" />
+            <marker date="1538620660485" expanded="true" signature="418:504" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Board.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding>
+            <marker date="1538587258357" expanded="true" signature="66:152" ph="{...}" />
+            <marker date="1538587258357" expanded="true" signature="91:150" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Position.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <marker date="1538588878194" expanded="true" signature="28:228" ph="{...}" />
+            <marker date="1538588878194" expanded="true" signature="35:109" ph="/// Describes a position on the board ... " />
+            <marker date="1538588878194" expanded="true" signature="135:226" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/PieceNameEnum.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <marker date="1538587696632" expanded="true" signature="34:168" ph="{...}" />
+            <marker date="1538587696632" expanded="true" signature="66:166" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/PieceExtension.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding>
+            <marker date="1538623266385" expanded="true" signature="6:141" ph="..." />
+            <marker date="1538623266385" expanded="true" signature="175:1393" ph="{...}" />
+            <marker date="1538623266385" expanded="true" signature="216:1391" ph="{...}" />
+            <marker date="1538623266385" expanded="true" signature="231:504" ph="/// Moves the piece given a new position ... " />
+            <marker date="1538623266385" expanded="true" signature="576:1385" ph="{...}" />
+            <marker date="1538623266385" expanded="true" signature="627:1375" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Builders/BoardBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+          <folding>
+            <marker date="1538620565910" expanded="false" signature="6:260" ph="..." />
+            <marker date="1538620565910" expanded="true" signature="292:3894" ph="{...}" />
+            <marker date="1538620565910" expanded="true" signature="340:3892" ph="{...}" />
+            <marker date="1538620565910" expanded="true" signature="426:540" ph="/// Creates a new instance of a board ... " />
+            <marker date="1538620565910" expanded="true" signature="577:838" ph="{...}" />
+            <marker date="1538620565910" expanded="true" signature="848:1048" ph="/// Sets up the initial board ... " />
+            <marker date="1538620565910" expanded="true" signature="1108:3886" ph="{...}" />
+            <marker date="1538620565910" expanded="true" signature="1145:3876" ph="{...}" />
+            <marker date="1538620565910" expanded="true" signature="1248:2029" ph="{...}" />
+            <marker date="1538620565910" expanded="true" signature="2969:3750" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/LinqExtension.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <marker date="1538625198867" expanded="false" signature="6:47" ph="..." />
+            <marker date="1538625198867" expanded="true" signature="81:971" ph="{...}" />
+            <marker date="1538625198867" expanded="true" signature="121:969" ph="{...}" />
+            <marker date="1538625198867" expanded="true" signature="136:341" ph="/// ForEach for IEnumerable ... " />
+            <marker date="1538625198867" expanded="true" signature="429:518" ph="{...}" />
+            <marker date="1538625198867" expanded="true" signature="536:778" ph="/// Convert IEnumerable to HashSet ... " />
+            <marker date="1538625198867" expanded="true" signature="890:963" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/PositionExtension.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <marker date="1538625231298" expanded="true" signature="59:1896" ph="{...}" />
+            <marker date="1538625231298" expanded="true" signature="103:1894" ph="{...}" />
+            <marker date="1538625231298" expanded="true" signature="118:368" ph="/// Increments the I property of position and returns a new position with updated props ... " />
+            <marker date="1538625231298" expanded="true" signature="475:550" ph="{...}" />
+            <marker date="1538625231298" expanded="true" signature="561:811" ph="/// Increments the J property of position and returns a new position with updated props ... " />
+            <marker date="1538625231298" expanded="true" signature="918:993" ph="{...}" />
+            <marker date="1538625231298" expanded="true" signature="1012:1262" ph="/// Decrements the I property of position and returns a new position with updated props ... " />
+            <marker date="1538625231298" expanded="true" signature="1369:1444" ph="{...}" />
+            <marker date="1538625231298" expanded="true" signature="1455:1705" ph="/// Decrements the J property of position and returns a new position with updated props ... " />
+            <marker date="1538625231298" expanded="true" signature="1812:1887" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <marker date="1538625969909" expanded="true" signature="6:96" ph="..." />
+            <marker date="1538625969909" expanded="true" signature="130:259" ph="{...}" />
+            <marker date="1538625969909" expanded="true" signature="171:257" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/MovementTypeEnum.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="32" />
+          <folding>
+            <marker date="1538626189450" expanded="true" signature="34:117" ph="{...}" />
+            <marker date="1538626189450" expanded="true" signature="69:115" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Movement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <marker date="1538626203794" expanded="false" signature="6:68" ph="..." />
+            <marker date="1538626203794" expanded="true" signature="98:443" ph="{...}" />
+            <marker date="1538626203794" expanded="true" signature="126:441" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding>
+            <marker date="1538626847154" expanded="true" signature="6:57" ph="..." />
+            <marker date="1538626847154" expanded="true" signature="91:190" ph="{...}" />
+            <marker date="1538626847154" expanded="true" signature="125:188" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="944">
+          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+          <folding>
+            <marker date="1538626893818" expanded="true" signature="6:308" ph="..." />
+            <marker date="1538626893818" expanded="true" signature="337:3495" ph="{...}" />
+            <marker date="1538626893818" expanded="true" signature="393:3493" ph="{...}" />
+            <marker date="1538626893818" expanded="true" signature="475:2956" ph="{...}" />
+            <marker date="1538626893818" expanded="true" signature="526:2946" ph="{...}" />
+            <marker date="1538626893818" expanded="true" signature="651:885" ph="{...}" />
+            <marker date="1538626893818" expanded="true" signature="1154:1332" ph="{...}" />
+            <marker date="1538626893818" expanded="true" signature="1620:1798" ph="{...}" />
+            <marker date="1538626893818" expanded="true" signature="1968:2274" ph="{...}" />
+            <marker date="1538626893818" expanded="true" signature="2386:2798" ph="{...}" />
+            <marker date="1538626893818" expanded="true" signature="2974:3225" ph="/// Returns valid actions ... " />
+            <marker date="1538626893818" expanded="true" signature="3305:3487" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <marker date="1538626865770" expanded="true" signature="6:101" ph="..." />
+            <marker date="1538626865770" expanded="true" signature="130:567" ph="{...}" />
+            <marker date="1538626865770" expanded="true" signature="172:565" ph="{...}" />
+            <marker date="1538626865770" expanded="true" signature="235:559" ph="{...}" />
+            <marker date="1538626865770" expanded="true" signature="275:549" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <marker date="1538626944610" expanded="true" signature="6:98" ph="..." />
+            <marker date="1538626944610" expanded="true" signature="131:1461" ph="{...}" />
+            <marker date="1538626944610" expanded="true" signature="172:1459" ph="{...}" />
+            <marker date="1538626944610" expanded="true" signature="187:413" ph="/// Validates an action ... " />
+            <marker date="1538626944610" expanded="true" signature="501:1453" ph="{...}" />
+            <marker date="1538626944610" expanded="true" signature="654:711" ph="{...}" />
+            <marker date="1538626944610" expanded="true" signature="788:846" ph="{...}" />
+            <marker date="1538626944610" expanded="true" signature="925:983" ph="{...}" />
+            <marker date="1538626944610" expanded="true" signature="1110:1168" ph="{...}" />
+            <marker date="1538626944610" expanded="true" signature="1182:1303" ph="/* Cannot override the piece from the same team ... */" />
+            <marker date="1538626944610" expanded="true" signature="1359:1417" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
