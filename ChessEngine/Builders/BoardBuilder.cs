@@ -42,7 +42,7 @@ namespace ChessEngine.Builders
                 case 0:
                     return new List<IPiece>
                     {
-                        new Rock(TeamEnum.Black, new Position {I = index, J = 0}),
+                        new Rook(TeamEnum.Black, new Position {I = index, J = 0}),
                         new Bishop(TeamEnum.Black, new Position {I = index, J = 1}),
                         new Knight(TeamEnum.Black, new Position {I = index, J = 2}),
                         new Knight(TeamEnum.Black, new Position {I = index, J = 3}),
@@ -50,7 +50,7 @@ namespace ChessEngine.Builders
                         new King(TeamEnum.Black, new Position {I = index, J = 4}),
                         new Bishop(TeamEnum.Black, new Position {I = index, J = 5}),
                         new Knight(TeamEnum.Black, new Position {I = index, J = 6}),
-                        new Rock(TeamEnum.Black, new Position {I = index, J = 7}),
+                        new Rook(TeamEnum.Black, new Position {I = index, J = 7}),
                     };
                 case 1:
                     return Enumerable.Range(0, BoardConstants.Dimension)
@@ -73,7 +73,7 @@ namespace ChessEngine.Builders
                 case 7:
                     return new List<IPiece>
                     {
-                        new Rock(TeamEnum.White, new Position {I = index, J = 0}),
+                        new Rook(TeamEnum.White, new Position {I = index, J = 0}),
                         new Bishop(TeamEnum.White, new Position {I = index, J = 1}),
                         new Knight(TeamEnum.White, new Position {I = index, J = 2}),
                         new Knight(TeamEnum.White, new Position {I = index, J = 3}),
@@ -81,7 +81,7 @@ namespace ChessEngine.Builders
                         new King(TeamEnum.White, new Position {I = index, J = 4}),
                         new Bishop(TeamEnum.White, new Position {I = index, J = 5}),
                         new Knight(TeamEnum.White, new Position {I = index, J = 6}),
-                        new Rock(TeamEnum.White, new Position {I = index, J = 7}),
+                        new Rook(TeamEnum.White, new Position {I = index, J = 7}),
                     };
                 default:
                     throw new Exception("Error: cannot arrange out of range pieces");

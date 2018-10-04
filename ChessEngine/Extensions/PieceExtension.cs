@@ -24,7 +24,7 @@ namespace ChessEngine.Extensions
                 case PieceNameEnum.Queen:
                     return new Queen(piece.TeamEnum, position);
                 case PieceNameEnum.Rook:
-                    return new Rock(piece.TeamEnum, position);
+                    return new Rook(piece.TeamEnum, position);
                 case PieceNameEnum.Bishop:
                     return new Bishop(piece.TeamEnum, position);
                 case PieceNameEnum.Knight:

@@ -4,7 +4,7 @@ using ChessEngine.Models.Interfaces;
 
 namespace ChessEngine.Models.Pieces
 {
-    public class Rock : IPiece
+    public class Rook : IPiece
     {
         public PieceNameEnum PieceNameEnum { get; } = PieceNameEnum.Rook;
         
@@ -12,7 +12,7 @@ namespace ChessEngine.Models.Pieces
 
         public Position Position { get; set; }
         
-        public Rock(TeamEnum teamEnum, Position position)
+        public Rook(TeamEnum teamEnum, Position position)
         {
             TeamEnum = teamEnum;
             Position = position;
