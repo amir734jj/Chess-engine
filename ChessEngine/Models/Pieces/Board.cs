@@ -348,8 +348,8 @@ namespace ChessEngine.Models.Pieces
         public bool IsSideToMovePiece(int position)
         {
             return
-                (_status.WhiteTurn && _squares[position] is WhitePiece) ||
-                (_status.BlackTurn && _squares[position] is BlackPiece);
+                _status.WhiteTurn && _squares[position] is WhitePiece ||
+                _status.BlackTurn && _squares[position] is BlackPiece;
         }
 
         /// <summary>
@@ -382,7 +382,7 @@ namespace ChessEngine.Models.Pieces
         /// <returns></returns>
         public static int Position(int rank, int file)
         {
-            return (rank * SideSquareNo) + file;
+            return rank * SideSquareNo + file;
         }
 
         /// <summary>

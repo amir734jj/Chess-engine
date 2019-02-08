@@ -1,0 +1,10 @@
+
+\.idea/
+
+ChessEngine/bin/
+
+ChessEngine/obj/
+
+ChessEngine\.Tests/bin/
+
+ChessEngine\.Tests/obj/

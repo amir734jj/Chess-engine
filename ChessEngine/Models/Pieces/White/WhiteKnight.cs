@@ -24,7 +24,7 @@ namespace ChessEngine.Models.Pieces.White
                 base.MightMove(board, from, to) &&
                 Board.File(from) != Board.File(to) &&// the files are different
                 Board.Rank(from) != Board.Rank(to) &&// the ranks are different
-                (Math.Abs(Board.File(from) - Board.File(to)) + Math.Abs(Board.Rank(from) - Board.Rank(to))) == 3;// the rank difference plus file difference must be 3
+                Math.Abs(Board.File(@from) - Board.File(to)) + Math.Abs(Board.Rank(@from) - Board.Rank(to)) == 3;// the rank difference plus file difference must be 3
         }
                 
         

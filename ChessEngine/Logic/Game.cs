@@ -18,16 +18,6 @@ namespace ChessEngine.Logic
     public class Game : IGame
     {
         /// <summary>
-        /// Mean history length.
-        /// </summary>
-        private const int MeanHistoryLength = 50;
-        
-        /// <summary>
-        /// Maximum possible moves number.
-        /// </summary>
-        private const int MaxPossibleMoves = 50;
-
-        /// <summary>
         /// Current board configuration.
         /// </summary>
         private Board _currentBoard;
@@ -65,42 +55,52 @@ namespace ChessEngine.Logic
         /// Moved event.
         /// </summary>
         public event EventHandler<MoveEventArgs> Moved;
+        
         /// <summary>
         /// Going forward event.
         /// </summary>
         public event EventHandler<CancelMoveEventArgs> GoingForward;
+        
         /// <summary>
         /// Gone forward event.
         /// </summary>
         public event EventHandler<MoveEventArgs> GoneForward;
+        
         /// <summary>
         /// Going back event.
         /// </summary>
         public event EventHandler<CancelMoveEventArgs> GoingBack;
+        
         /// <summary>
         /// Gone back event.
         /// </summary>
         public event EventHandler<MoveEventArgs> GoneBack;
+        
         /// <summary>
         /// Modifying event.
         /// </summary>
         public event EventHandler<CancelEventArgs> Modifying;
+        
         /// <summary>
         /// Modified event.
         /// </summary>
         public event EventHandler Modified;
+        
         /// <summary>
         /// Loading event.
         /// </summary>
         public event EventHandler<CancelEventArgs> Loading;
+        
         /// <summary>
         /// Board configuration loaded event.
         /// </summary>
         public event EventHandler BoardConfigurationLoaded;
+        
         /// <summary>
         /// Game board configuration loaded event.
         /// </summary>
         public event EventHandler GameBoardConfigurationLoaded;
+        
         /// <summary>
         /// Game move section loaded event.
         /// </summary>
@@ -266,11 +266,14 @@ namespace ChessEngine.Logic
         /// <summary>
         /// Constructor.
         /// </summary>
-        public Game()
+        /// <param name="board"></param>
+        public Game(Board board)
         {
-            _moveHistory = new List<Move>(MeanHistoryLength);
-            _possibleMoves = new List<Move>(MaxPossibleMoves);
-            _historyHashes = new Dictionary<int, int>(MeanHistoryLength);
+            _moveHistory = new List<Move>();
+            _possibleMoves = new List<Move>();
+            _historyHashes = new Dictionary<int, int>();
+
+            CurrentBoard = board;
         }
 
         /// <summary>
@@ -383,7 +386,7 @@ namespace ChessEngine.Logic
                 var move = _moveHistory[_currentBoardIndex];
 
                 // build the event args
-                CancelMoveEventArgs moveEventArgs = new CancelMoveEventArgs(move, _currentBoardIndex - 1);
+                var moveEventArgs = new CancelMoveEventArgs(move, _currentBoardIndex - 1);
 
                 // raise the GoingForward event
                 OnGoingForward(moveEventArgs);
@@ -723,19 +726,19 @@ namespace ChessEngine.Logic
             }
 
             // if there are only the kings and one bishop on one side
-            if ((b && !B && !N && !n) || (B && !b && !n && !N))
+            if (b && !B && !N && !n || B && !b && !n && !N)
             {
                 return true;
             }
 
             // if there are only the kings and one knight on one side
-            if ((n && !N && !B && !b) || (N && !n && !b && !B))
+            if (n && !N && !B && !b || N && !n && !b && !B)
             {
                 return true;
             }
 
             // if there are only the kings and one bishop on each side, both of them on squares with the same colour
-            if (B && b && !N && !n && (bw == BW))
+            if (B && b && !N && !n && bw == BW)
             {
                 return true;
             }

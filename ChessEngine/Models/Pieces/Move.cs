@@ -1,3 +1,5 @@
+using ChessEngine.Models.Interfaces;
+
 namespace ChessEngine.Models.Pieces
 {
     /// <summary>
@@ -26,6 +28,8 @@ namespace ChessEngine.Models.Pieces
         /// The captured piece.
         /// </summary>
         protected Piece capture;
+
+        public IPiece Actor { get; }
 
         /// <summary>
         /// The board status before the move is made.
@@ -64,12 +68,14 @@ namespace ChessEngine.Models.Pieces
         /// <param name="before">The before status</param>
         /// <param name="from">The starting square</param>
         /// <param name="to">The ending square</param>
-        internal Move(BoardStatus before, int from, int to)
+        /// <param name="actor"></param>
+        internal Move(BoardStatus before, int @from, int to, IPiece actor)
         {
             this.before = before;
             after = before;// the after board status is initialized with the before status
             this.from = from;
             this.to = to;
+            Actor = actor;
         }
 
         /// <summary>

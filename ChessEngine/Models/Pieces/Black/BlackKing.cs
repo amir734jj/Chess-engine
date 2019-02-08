@@ -24,7 +24,7 @@ namespace ChessEngine.Models.Pieces.Black
             return
                 base.MightMove(board, from, to) &&
                 (
-                (Math.Abs(Board.Rank(from) - Board.Rank(to)) <= 1 && Math.Abs(Board.File(from) - Board.File(to)) <= 1) ||// the king can move one square 
+                Math.Abs(Board.Rank(@from) - Board.Rank(to)) <= 1 && Math.Abs(Board.File(@from) - Board.File(to)) <= 1 ||// the king can move one square 
                 CanCastleLong(board, from, to) ||// the king can castle long
                 CanCastleShort(board, from, to)// the king can castle short
                 );
@@ -55,12 +55,10 @@ namespace ChessEngine.Models.Pieces.Black
         /// <returns></returns>
         public bool CanCastleLong(Board board, int from, int to)
         {
-            return (
-                from == Board.E8 && to == Board.C8 &&
-                board.Status.BlackCouldCastleLong &&//check if the king or the rook didn't already move
-                board.IsPathClear(Board.A8, Board.E8) &&// check if the path is clear 
-                !board.IsAttackedByWhite(Board.E8) && !board.IsAttackedByWhite(Board.D8) && !board.IsAttackedByWhite(Board.C8)// check if the squares traversed by king are not attacked
-                );
+            return @from == Board.E8 && to == Board.C8 &&
+                   board.Status.BlackCouldCastleLong &&//check if the king or the rook didn't already move
+                   board.IsPathClear(Board.A8, Board.E8) &&// check if the path is clear 
+                   !board.IsAttackedByWhite(Board.E8) && !board.IsAttackedByWhite(Board.D8) && !board.IsAttackedByWhite(Board.C8);
         }
 
         /// <summary>
@@ -72,12 +70,10 @@ namespace ChessEngine.Models.Pieces.Black
         /// <returns></returns>
         public bool CanCastleShort(Board board, int from, int to)
         {
-            return (
-                from == Board.E8 && to == Board.G8 &&
-                board.Status.BlackCouldCastleShort &&//check if the king or the rook didn't already move
-                board.IsPathClear(Board.E8, Board.H8) &&// check if the path is clear
-                !board.IsAttackedByWhite(Board.E8) && !board.IsAttackedByWhite(Board.F8) && !board.IsAttackedByWhite(Board.G8)// check if the squares traversed by king are not attacked
-                );
+            return @from == Board.E8 && to == Board.G8 &&
+                   board.Status.BlackCouldCastleShort &&//check if the king or the rook didn't already move
+                   board.IsPathClear(Board.E8, Board.H8) &&// check if the path is clear
+                   !board.IsAttackedByWhite(Board.E8) && !board.IsAttackedByWhite(Board.F8) && !board.IsAttackedByWhite(Board.G8);
         }
 
         /// <summary>
@@ -96,7 +92,7 @@ namespace ChessEngine.Models.Pieces.Black
             // end in check so we don't have to verify it again
             if (CanCastleLong(board, from, to))
             {
-                move = new CastlingMove(board.Status, Board.E8, Board.C8, new Move(board.Status, Board.A8, Board.D8));
+                move = new CastlingMove(board.Status, Board.E8, Board.C8, new Move(board.Status, Board.A8, Board.D8, this), this);
 
                 move.ChangeSideToMove();// change side to move 
                 move.MakeBlackLongCastlingUnavail();// reset castling availability
@@ -113,7 +109,7 @@ namespace ChessEngine.Models.Pieces.Black
             // end in check so we don't have to verify it again
             if (CanCastleShort(board, from, to))
             {
-                move = new CastlingMove(board.Status, Board.E8, Board.G8, new Move(board.Status, Board.H8, Board.F8));
+                move = new CastlingMove(board.Status, Board.E8, Board.G8, new Move(board.Status, Board.H8, Board.F8, this), this);
 
                 move.ChangeSideToMove();// change side to move  
                 move.MakeBlackLongCastlingUnavail();// reset castling availability

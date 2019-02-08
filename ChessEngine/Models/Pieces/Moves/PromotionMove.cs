@@ -42,8 +42,8 @@ namespace ChessEngine.Models.Pieces.Moves
                 // if the promotion is not Queen, Rook, Knight, Bishop, it's not the right color or there is no empty-args constructor, set as Queen
                 if (
                     (Array.IndexOf(typeInterfaces, typeof(IQueen)) > -1 || Array.IndexOf(typeInterfaces, typeof(IRook)) > -1 || Array.IndexOf(typeInterfaces, typeof(IKnight)) > -1 || Array.IndexOf(typeInterfaces, typeof(IBishop)) > -1) &&
-                    ((before.WhiteTurn && value.IsSubclassOf(typeof(WhitePiece))) || (before.BlackTurn && value.IsSubclassOf(typeof(BlackPiece)))) &&
-                    (constructorInfo != null)
+                    (before.WhiteTurn && value.IsSubclassOf(typeof(WhitePiece)) || before.BlackTurn && value.IsSubclassOf(typeof(BlackPiece))) &&
+                    constructorInfo != null
                     )
                 {
                     _promotionPiece = constructorInfo.Invoke(null) as Piece;
@@ -70,8 +70,9 @@ namespace ChessEngine.Models.Pieces.Moves
         /// <param name="before">The before status</param>
         /// <param name="from">The starting square</param>
         /// <param name="to">The ending square</param>
-        internal PromotionMove(BoardStatus before, int from, int to)
-            : base(before, from, to)
+        /// <param name="actor"></param>
+        internal PromotionMove(BoardStatus before, int from, int to, IPiece actor)
+            : base(before, @from, to, actor)
         {
         }
 

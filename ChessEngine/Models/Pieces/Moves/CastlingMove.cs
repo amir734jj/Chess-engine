@@ -1,3 +1,5 @@
+using ChessEngine.Models.Interfaces;
+
 namespace ChessEngine.Models.Pieces.Moves
 {
     /// <summary>
@@ -8,12 +10,7 @@ namespace ChessEngine.Models.Pieces.Moves
         /// <summary>
         /// The rook move.
         /// </summary>
-        Move rookMove;
-
-        /// <summary>
-        /// The rook move.
-        /// </summary>
-        public Move RookMove => rookMove;
+        public Move RookMove { get; }
 
         /// <summary>
         /// Constructor.
@@ -22,10 +19,11 @@ namespace ChessEngine.Models.Pieces.Moves
         /// <param name="from">The starting square</param>
         /// <param name="to">The ending square</param>
         /// <param name="rookMove">The rook move</param>
-        internal CastlingMove(BoardStatus before, int from, int to, Move rookMove)
-            : base(before, from, to)
+        /// <param name="actor"></param>
+        internal CastlingMove(BoardStatus before, int from, int to, Move rookMove, IPiece actor)
+            : base(before, from, to, actor)
         {
-            this.rookMove = rookMove;
+            RookMove = rookMove;
         }
 
         /// <summary>
@@ -34,7 +32,7 @@ namespace ChessEngine.Models.Pieces.Moves
         /// <param name="board">The board</param>
         internal override void Make(Board board)
         {
-            rookMove.Make(board);// make the rook move first
+            RookMove.Make(board);// make the rook move first
 
             base.Make(board);// make the king move last to set the after board status
         }
@@ -45,11 +43,9 @@ namespace ChessEngine.Models.Pieces.Moves
         /// <param name="board">The board</param>
         internal override void TakeBack(Board board)
         {
-            rookMove.TakeBack(board);// take back the rook move first
+            RookMove.TakeBack(board);// take back the rook move first
 
             base.TakeBack(board);// take back the king move last to set the before board status
         }
-
-
     }
 }

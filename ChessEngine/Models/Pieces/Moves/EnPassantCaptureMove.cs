@@ -1,3 +1,5 @@
+using ChessEngine.Models.Interfaces;
+
 namespace ChessEngine.Models.Pieces.Moves
 {
     /// <summary>
@@ -16,8 +18,9 @@ namespace ChessEngine.Models.Pieces.Moves
         /// <param name="before">The before status</param>
         /// <param name="from">The starting square</param>
         /// <param name="to">The ending square</param>
-        internal EnPassantCaptureMove(BoardStatus before, int from, int to)
-            : base(before, from, to)
+        /// <param name="actor"></param>
+        internal EnPassantCaptureMove(BoardStatus before, int from, int to, IPiece actor)
+            : base(before, @from, to, actor)
         {
         }
 

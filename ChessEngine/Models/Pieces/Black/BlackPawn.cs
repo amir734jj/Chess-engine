@@ -24,16 +24,12 @@ namespace ChessEngine.Models.Pieces.Black
         {
             return
                 // a pawn can move one square in front to an empty square
-                (
-                    to == from + Board.SideSquareNo &&// it's the front square
-                    board[to] == null// it's an empty square
-                ) ||
+                to == @from + Board.SideSquareNo &&// it's the front square
+                board[to] == null ||
                 // a pawn can move one square in front diagonally if there is an opposite side piece
-                (
-                    Board.Rank(to) == Board.Rank(from) + 1 &&// it's on the front row
-                    Math.Abs(Board.File(to) - Board.File(from)) == 1 &&// it's a diagonal move 
-                    board[to] is WhitePiece// it's an opposite side piece
-                ) ||
+                Board.Rank(to) == Board.Rank(@from) + 1 &&// it's on the front row
+                Math.Abs(Board.File(to) - Board.File(@from)) == 1 &&// it's a diagonal move 
+                board[to] is WhitePiece ||
                    IsTwoSquaresMove(board, from, to) ||// it's the two-squares move
                 IsEnPassantCaptureMove(board, from, to);// it's the en passant move
         }
@@ -99,7 +95,7 @@ namespace ChessEngine.Models.Pieces.Black
             // if it's an en passant capture
             if (IsEnPassantCaptureMove(board, from, to))
             {
-                move = new EnPassantCaptureMove(board.Status, from, to);
+                move = new EnPassantCaptureMove(board.Status, from, to, this);
 
                 move.ChangeSideToMove();// change the side to move
                 move.SetEnPassantTarget(null);// reset the en passant target
@@ -132,7 +128,7 @@ namespace ChessEngine.Models.Pieces.Black
                     // we don't need to verify for check again
                     // so the promotion delegate will not be triggered
                     // later we will change the promotion type as needed
-                    move = new PromotionMove(board.Status, from, to);
+                    move = new PromotionMove(board.Status, from, to, this);
 
                     move.ChangeSideToMove();// change the side to move
                     move.SetEnPassantTarget(null);// reset the en passant target

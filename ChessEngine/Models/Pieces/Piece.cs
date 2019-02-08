@@ -46,8 +46,7 @@ namespace ChessEngine.Models.Pieces
         {
             if (!MightMove(board, from, to)) { return null; }
 
-            var move = new Move(board.Status, from, to);
-
+            var move = new Move(board.Status, @from, to, this);
 
             move.ChangeSideToMove();// change side to move
             move.SetEnPassantTarget(null);// reset the en passant target
