@@ -2,8 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b447e5-1dd5-4b0a-8acd-b2c4886fdee6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Extensions/BoardExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Logic/OpponentsInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Constants/OpponentsSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Events/CancelMoveEventArgs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Events/MoveEventArgs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Interfaces/Interfaces.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackBishop.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackKing.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackKnight.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackPawn.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackPiece.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackQueen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackRook.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Board.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Move.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/CastlingMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/EnPassantCaptureMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/PromotionMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Piece.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteBishop.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKing.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKnight.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhitePawn.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhitePiece.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteQueen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteRook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Builders/BoardBuilder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Extensions/BoardExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Extensions/PieceExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Extensions/PositionExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Interfaces/IBoardBuilder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Board.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Models/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Interfaces/IPiece.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Movement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Bishop.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/King.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Knight.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Pawn.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Queen.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Rook.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Position.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,203 +69,265 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-851072088">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cs" value="49" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="C#" value="49" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cs" value="3567" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="C#" value="3567" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Game.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="15" column="48" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="2219">
+              <caret line="422" column="30" selection-start-line="422" selection-start-column="30" selection-end-line="422" selection-end-column="30" />
               <folding>
-                <marker date="1538626893818" expanded="true" signature="6:308" ph="..." />
-                <marker date="1538626893818" expanded="true" signature="337:3495" ph="{...}" />
-                <marker date="1538626893818" expanded="true" signature="393:3493" ph="{...}" />
-                <marker date="1538626893818" expanded="true" signature="475:2956" ph="{...}" />
-                <marker date="1538626893818" expanded="true" signature="526:2946" ph="{...}" />
-                <marker date="1538626893818" expanded="true" signature="651:885" ph="{...}" />
-                <marker date="1538626893818" expanded="true" signature="1154:1332" ph="{...}" />
-                <marker date="1538626893818" expanded="true" signature="1620:1798" ph="{...}" />
-                <marker date="1538626893818" expanded="true" signature="1968:2274" ph="{...}" />
-                <marker date="1538626893818" expanded="true" signature="2386:2798" ph="{...}" />
-                <marker date="1538626893818" expanded="true" signature="2974:3225" ph="/// Returns valid actions ... " />
-                <marker date="1538626893818" expanded="true" signature="3305:3487" ph="{...}" />
+                <marker date="1549606548984" expanded="false" signature="6:296" ph="..." />
+                <marker date="1549606548984" expanded="true" signature="326:25052" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="333:398" ph="/// Implements a chess game. ... " />
+                <marker date="1549606548984" expanded="true" signature="420:24746" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="435:504" ph="/// Mean history length. ... " />
+                <marker date="1549606548984" expanded="true" signature="571:650" ph="/// Maximum possible moves number. ... " />
+                <marker date="1549606548984" expanded="true" signature="708:785" ph="/// Current board configuration. ... " />
+                <marker date="1549606548984" expanded="true" signature="839:908" ph="/// Current board index. ... " />
+                <marker date="1549606548984" expanded="true" signature="965:1027" ph="/// Move history. ... " />
+                <marker date="1549606548984" expanded="true" signature="1086:1154" ph="/// Status of the game. ... " />
+                <marker date="1549606548984" expanded="true" signature="1208:1305" ph="/// List of the possible moves of the current board. ... " />
+                <marker date="1549606548984" expanded="true" signature="1366:1516" ph="/// Contains pairs consisting of a board hash and the frequency of that board in the history of the game. ... " />
+                <marker date="1549606548984" expanded="true" signature="1579:1641" ph="/// Moving event. ... " />
+                <marker date="1549606548984" expanded="true" signature="1713:1774" ph="/// Moved event. ... " />
+                <marker date="1549606548984" expanded="true" signature="1839:1908" ph="/// Going forward event. ... " />
+                <marker date="1549606548984" expanded="true" signature="1986:2054" ph="/// Gone forward event. ... " />
+                <marker date="1549606548984" expanded="true" signature="2125:2191" ph="/// Going back event. ... " />
+                <marker date="1549606548984" expanded="true" signature="2266:2331" ph="/// Gone back event. ... " />
+                <marker date="1549606548984" expanded="true" signature="2399:2464" ph="/// Modifying event. ... " />
+                <marker date="1549606548984" expanded="true" signature="2535:2599" ph="/// Modified event. ... " />
+                <marker date="1549606548984" expanded="true" signature="2652:2715" ph="/// Loading event. ... " />
+                <marker date="1549606548984" expanded="true" signature="2784:2866" ph="/// Board configuration loaded event. ... " />
+                <marker date="1549606548984" expanded="true" signature="2935:3022" ph="/// Game board configuration loaded event. ... " />
+                <marker date="1549606548984" expanded="true" signature="3095:3175" ph="/// Game move section loaded event. ... " />
+                <marker date="1549606548984" expanded="true" signature="3242:3352" ph="/// Raises the Moving event. ... " />
+                <marker date="1549606548984" expanded="true" signature="3415:3472" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="3481:3590" ph="/// Raises the Moved event. ... " />
+                <marker date="1549606548984" expanded="true" signature="3646:3702" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="3711:3827" ph="/// Raises the GoingForward event. ... " />
+                <marker date="1549606548984" expanded="true" signature="3896:3959" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="3968:4083" ph="/// Raises the GoneForward event. ... " />
+                <marker date="1549606548984" expanded="true" signature="4145:4207" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="4216:4329" ph="/// Raises the GoingBack event. ... " />
+                <marker date="1549606548984" expanded="true" signature="4395:4455" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="4464:4576" ph="/// Raises the GoneBack event. ... " />
+                <marker date="1549606548984" expanded="true" signature="4635:4694" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="4704:4817" ph="/// Raises the Modifying event. ... " />
+                <marker date="1549606548984" expanded="true" signature="4879:4939" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="4948:5060" ph="/// Raises the Modified event. ... " />
+                <marker date="1549606548984" expanded="true" signature="5115:5174" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="5184:5295" ph="/// Raises the Loading event. ... " />
+                <marker date="1549606548984" expanded="true" signature="5364:5422" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="5440:5568" ph="/// Raises the BoardConfigurationLoaded event. ... " />
+                <marker date="1549606548984" expanded="true" signature="5648:5723" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="5741:5873" ph="/// Raises the GameBoardConfigurationLoaded event. ... " />
+                <marker date="1549606548984" expanded="true" signature="5957:6036" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="6054:6179" ph="/// Raises the GameMoveSectionLoaded event. ... " />
+                <marker date="1549606548984" expanded="true" signature="6256:6328" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="6338:6406" ph="/// Promotion delegate. ... " />
+                <marker date="1549606548984" expanded="true" signature="6470:6599" ph="/// True if the current board configuration is the last in history, false otherwise. ... " />
+                <marker date="1549606548984" expanded="true" signature="6680:6810" ph="/// True if the current board configuration is the first in history, false otherwise. ... " />
+                <marker date="1549606548984" expanded="true" signature="6875:6967" ph="/// True if the game is ended, false otherwise. ... " />
+                <marker date="1549606548984" expanded="true" signature="7069:7167" ph="/// True if the game is initialized, false otherwise. ... " />
+                <marker date="1549606548984" expanded="true" signature="7236:7330" ph="/// Gets or sets the current board configuration. ... " />
+                <marker date="1549606548984" expanded="true" signature="7364:7723" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="7432:7713" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="7733:7814" ph="/// Gets the list of possible moves. ... " />
+                <marker date="1549606548984" expanded="true" signature="7886:7956" ph="/// Gets the game status. ... " />
+                <marker date="1549606548984" expanded="true" signature="8011:8072" ph="/// Constructor. ... " />
+                <marker date="1549606548984" expanded="true" signature="8094:8313" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="8323:8729" ph="/// Gets the valid move based on starting square and ending square.  ... " />
+                <marker date="1549606548984" expanded="true" signature="8795:9323" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="8959:9287" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="9029:9273" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="9108:9221" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="9333:9501" ph="/// Gets a move which if it is made, it will probably end the game in a draw by repetition. ... " />
+                <marker date="1549606548984" expanded="true" signature="10351:10545" ph="/// Makes a move. ... " />
+                <marker date="1549606548984" expanded="true" signature="10581:12484" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="10808:10996" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="10882:10982" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="11458:11587" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="11827:11922" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="12494:12589" ph="/// Go to the next board configuration in history. ... " />
+                <marker date="1549606548984" expanded="true" signature="12616:13692" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="12700:13682" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="13702:13801" ph="/// Go to the previous board configuration in history. ... " />
+                <marker date="1549606548984" expanded="true" signature="13832:14903" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="13918:14893" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="14913:15008" ph="/// Go to the last board configuration in history. ... " />
+                <marker date="1549606548984" expanded="true" signature="15039:15901" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="15398:15809" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="15911:16007" ph="/// Go to the first board configuration in history. ... " />
+                <marker date="1549606548984" expanded="true" signature="16039:16912" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="16400:16820" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="16922:17021" ph="/// Generates the possible moves of the current board. ... " />
+                <marker date="1549606548984" expanded="true" signature="17058:17904" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="17278:17894" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="17418:17880" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="17587:17862" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="17914:17983" ph="/// Set the game status. ... " />
+                <marker date="1549606548984" expanded="true" signature="18016:19004" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="18134:18269" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="18369:18484" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="18577:18678" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="18770:18875" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="19014:19102" ph="/// Adds the current board hash to history. ... " />
+                <marker date="1549606548984" expanded="true" signature="19140:19411" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="19421:19514" ph="/// Removes the current board hash from history. ... " />
+                <marker date="1549606548984" expanded="true" signature="19555:19952" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="19775:19852" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="19869:19942" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="19962:20136" ph="/// Gets the captured pieces. ... " />
+                <marker date="1549606548984" expanded="true" signature="20193:20917" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="20463:20877" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="20927:21045" ph="/// Verifies the current board for check. ... " />
+                <marker date="1549606548984" expanded="true" signature="21076:21214" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="21224:21366" ph="/// Verifies the current board for draw by insufficient material. ... " />
+                <marker date="1549606548984" expanded="true" signature="21416:24740" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="21439:21788" ph="/* &quot;N&quot; is true if there is one White Knight ... */" />
+                <marker date="1549606548984" expanded="true" signature="21982:23955" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="22047:23941" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="22127:22398" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="22461:22853" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="22916:23187" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="23250:23643" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="24037:24094" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="24229:24286" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="24421:24478" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="24646:24703" ph="{...}" />
+                <marker date="1549606548984" expanded="true" signature="24752:24817" ph="/// Game status enumeration. ... " />
+                <marker date="1549606548984" expanded="true" signature="24945:25005" ph="/// Promotion delegate. ... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs">
+        <entry file="file://$PROJECT_DIR$/ChessEngine.Tests/UnitTest1.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state relative-caret-position="176">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <marker date="1538627626882" expanded="true" signature="6:101" ph="..." />
-                <marker date="1538627626882" expanded="true" signature="130:503" ph="{...}" />
-                <marker date="1538627626882" expanded="true" signature="172:501" ph="{...}" />
-                <marker date="1538627626882" expanded="true" signature="302:372" ph="{...}" />
-                <marker date="1538627626882" expanded="true" signature="438:495" ph="{...}" />
+                <marker date="1549608531843" expanded="true" signature="6:52" ph="..." />
+                <marker date="1549608531843" expanded="true" signature="81:188" ph="{...}" />
+                <marker date="1549608531843" expanded="true" signature="110:186" ph="{...}" />
+                <marker date="1549608531843" expanded="true" signature="159:180" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/BoardExtensions.cs">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="60" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="60" />
+            <state relative-caret-position="-410">
+              <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
               <folding>
-                <marker date="1538627603058" expanded="true" signature="6:147" ph="..." />
-                <marker date="1538627603058" expanded="true" signature="181:765" ph="{...}" />
-                <marker date="1538627603058" expanded="true" signature="223:763" ph="{...}" />
-                <marker date="1538627603058" expanded="true" signature="238:432" ph="/// Returns the available pieces ... " />
-                <marker date="1538627603058" expanded="true" signature="530:757" ph="{...}" />
+                <marker date="1549608361107" expanded="false" signature="6:234" ph="..." />
+                <marker date="1549608361107" expanded="true" signature="263:8256" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="270:352" ph="/// A human player playing against an engine. ... " />
+                <marker date="1549608361107" expanded="true" signature="381:7961" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="396:455" ph="/// The model. ... " />
+                <marker date="1549608361107" expanded="true" signature="495:631" ph="/// True if the game is in navigational mode (using next/prev/first/last), false otherwise. ... " />
+                <marker date="1549608361107" expanded="true" signature="671:742" ph="/// The background worker. ... " />
+                <marker date="1549608361107" expanded="true" signature="801:900" ph="/// True to if the model loads moves, false otherwise. ... " />
+                <marker date="1549608361107" expanded="true" signature="952:1043" ph="/// True if it's engine turn, false otherwise. ... " />
+                <marker date="1549608361107" expanded="true" signature="1266:1547" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="1557:1646" ph="/// Force engine to start thinking and move. ... " />
+                <marker date="1549608361107" expanded="true" signature="1682:2238" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="1891:2228" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="2248:2320" ph="/// Aborts engine thinking. ... " />
+                <marker date="1549608361107" expanded="true" signature="2377:2532" ph="/// Starts the engine thinking. ... " />
+                <marker date="1549608361107" expanded="true" signature="2629:2831" ph="/// Called when the engine ended thinking. ... " />
+                <marker date="1549608361107" expanded="true" signature="2930:3860" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="2956:3349" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="3077:3335" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="3391:3610" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="3643:3850" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="3870:3970" ph="/// Gets or sets the model. ... " />
+                <marker date="1549608361107" expanded="true" signature="3996:4822" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="4048:4812" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="4164:4798" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="4888:5541" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="5058:5237" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="5346:5531" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="5610:5762" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="5827:5979" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="6060:6144" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="6229:6402" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="6480:6590" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="6600:6736" ph="/// Gets the engine input parameters from the current game. ... " />
+                <marker date="1549608361107" expanded="true" signature="6797:7272" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="6919:6997" ph="/* set the current board FEN ... */" />
+                <marker date="1549608361107" expanded="true" signature="7282:7360" ph="/// Dispose the engine resources. ... " />
+                <marker date="1549608361107" expanded="true" signature="7398:7955" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="7472:7945" ph="{...}" />
+                <marker date="1549608361107" expanded="true" signature="7967:8057" ph="/// Helper class, stores the engine input parameters. ... " />
+                <marker date="1549608361107" expanded="true" signature="8096:8254" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/OpponentsSettings.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+            <state relative-caret-position="64">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
               <folding>
-                <marker date="1538626847154" expanded="true" signature="6:57" ph="..." />
-                <marker date="1538626847154" expanded="true" signature="91:190" ph="{...}" />
-                <marker date="1538626847154" expanded="true" signature="125:188" ph="{...}" />
+                <marker date="1549606631198" expanded="true" signature="38:98" ph="{...}" />
+                <marker date="1549606631198" expanded="true" signature="75:96" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/MovementTypeEnum.cs">
+        <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/OpponentsInfo.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="32" />
+            <state relative-caret-position="1136">
+              <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
               <folding>
-                <marker date="1538626189450" expanded="true" signature="34:117" ph="{...}" />
-                <marker date="1538626189450" expanded="true" signature="69:115" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Rook.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-              <folding>
-                <marker date="1538627080770" expanded="false" signature="6:102" ph="..." />
-                <marker date="1538627080770" expanded="true" signature="139:512" ph="{...}" />
-                <marker date="1538627080770" expanded="true" signature="172:510" ph="{...}" />
-                <marker date="1538627080770" expanded="true" signature="418:504" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Movement.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <folding>
-                <marker date="1538626203794" expanded="false" signature="6:68" ph="..." />
-                <marker date="1538626203794" expanded="true" signature="98:443" ph="{...}" />
-                <marker date="1538626203794" expanded="true" signature="126:441" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="38" />
-              <folding>
-                <marker date="1538625969909" expanded="true" signature="6:96" ph="..." />
-                <marker date="1538625969909" expanded="true" signature="130:259" ph="{...}" />
-                <marker date="1538625969909" expanded="true" signature="171:257" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/PositionExtension.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <marker date="1538625231298" expanded="true" signature="59:1896" ph="{...}" />
-                <marker date="1538625231298" expanded="true" signature="103:1894" ph="{...}" />
-                <marker date="1538625231298" expanded="true" signature="118:368" ph="/// Increments the I property of position and returns a new position with updated props ... " />
-                <marker date="1538625231298" expanded="true" signature="475:550" ph="{...}" />
-                <marker date="1538625231298" expanded="true" signature="561:811" ph="/// Increments the J property of position and returns a new position with updated props ... " />
-                <marker date="1538625231298" expanded="true" signature="918:993" ph="{...}" />
-                <marker date="1538625231298" expanded="true" signature="1012:1262" ph="/// Decrements the I property of position and returns a new position with updated props ... " />
-                <marker date="1538625231298" expanded="true" signature="1369:1444" ph="{...}" />
-                <marker date="1538625231298" expanded="true" signature="1455:1705" ph="/// Decrements the J property of position and returns a new position with updated props ... " />
-                <marker date="1538625231298" expanded="true" signature="1812:1887" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <marker date="1538626944610" expanded="true" signature="6:98" ph="..." />
-                <marker date="1538626944610" expanded="true" signature="131:1461" ph="{...}" />
-                <marker date="1538626944610" expanded="true" signature="172:1459" ph="{...}" />
-                <marker date="1538626944610" expanded="true" signature="187:413" ph="/// Validates an action ... " />
-                <marker date="1538626944610" expanded="true" signature="501:1453" ph="{...}" />
-                <marker date="1538626944610" expanded="true" signature="654:711" ph="{...}" />
-                <marker date="1538626944610" expanded="true" signature="788:846" ph="{...}" />
-                <marker date="1538626944610" expanded="true" signature="925:983" ph="{...}" />
-                <marker date="1538626944610" expanded="true" signature="1110:1168" ph="{...}" />
-                <marker date="1538626944610" expanded="true" signature="1182:1303" ph="/* Cannot override the piece from the same team ... */" />
-                <marker date="1538626944610" expanded="true" signature="1359:1417" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="6:54" ph="..." />
+                <marker date="1549608297573" expanded="true" signature="83:5620" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="90:175" ph="/// Stores information about the game opponents. ... " />
+                <marker date="1549608297573" expanded="true" signature="242:5617" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="257:316" ph="/// The model. ... " />
+                <marker date="1549608297573" expanded="true" signature="354:417" ph="/// The opponents. ... " />
+                <marker date="1549608297573" expanded="true" signature="465:538" ph="/// The opponents info text. ... " />
+                <marker date="1549608297573" expanded="true" signature="590:649" ph="/// The model. ... " />
+                <marker date="1549608297573" expanded="true" signature="675:984" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="727:974" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="843:960" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="994:1095" ph="/// The opponents info text. ... " />
+                <marker date="1549608297573" expanded="true" signature="1135:1436" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="1207:1426" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="1269:1412" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="1446:1518" ph="/// Property changed event. ... " />
+                <marker date="1549608297573" expanded="true" signature="1594:1721" ph="/// Raises property changed event. ... " />
+                <marker date="1549608297573" expanded="true" signature="1781:1888" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="1898:1959" ph="/// Constructor. ... " />
+                <marker date="1549608297573" expanded="true" signature="1990:2536" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="2091:2167" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="2234:2315" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="2546:2700" ph="/// Constructor. ... " />
+                <marker date="1549608297573" expanded="true" signature="2772:2825" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="2907:4226" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="3103:3484" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="3630:4016" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="4079:4216" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="4236:4314" ph="/// Sets the opponents info text. ... " />
+                <marker date="1549608297573" expanded="true" signature="4358:4796" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="4426:4519" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="4586:4786" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="4806:4929" ph="/// Force the opponent engine to move, if the game is not in two-players mode. ... " />
+                <marker date="1549608297573" expanded="true" signature="4963:5067" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="5077:5168" ph="/// True if it's engine turn, false otherwise. ... " />
+                <marker date="1549608297573" expanded="true" signature="5195:5356" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="5221:5346" ph="{...}" />
+                <marker date="1549608297573" expanded="true" signature="5366:5437" ph="/// Release the resources. ... " />
+                <marker date="1549608297573" expanded="true" signature="5493:5611" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -215,77 +335,116 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>hash</find>
+      <find>has</find>
+      <find>zobristKeys</find>
+      <find>tost</find>
+      <find>empt</find>
+      <find>empty</find>
+      <find>CancelMoveEventArgs</find>
+      <find>cance</find>
+      <find>MeanHistoryLength</find>
+      <find>FEN</find>
+      <find>BackgroundWorker</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Interfaces/IPiece.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Board.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Pawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/PromotionMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Valil.Chess.WinFX/Valil.Chess.Model/Utils.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine.Tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/PieceNameEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IBoardBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Position.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/King.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Queen.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Rook.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Bishop.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Movement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Knight.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Builders/BoardBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Extensions/PieceExtension.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Extensions/PositionExtension.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/MovementTypeEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Extensions/LinqExtension.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Extensions/BoardExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteRook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/TeamEnum'.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteQueen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/MovementTypeEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhitePiece.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/OpponentsSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhitePawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKnight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteBishop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Logic/OpponentsInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Piece.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Move.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Events/MoveEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/CastlingMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Board.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Events/CancelMoveEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackRook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackQueen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackPiece.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackPawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackKnight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackKing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackBishop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Valil.Chess.WinFX/Valil.Chess.Opponents/HumanVsWebService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Interfaces/Interfaces.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/EnPassantCaptureMove.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Rooks.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Enums/PieceNameEnum.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstant.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Extensions/LiqExtension.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Enums/TeamEnum'.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Position.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Game.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Interfaces/IBoardBuilder.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Builders/BoardBuilder.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Interfaces/IPiece.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Bishop.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/King.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Knight.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Pawn.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Queen.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Board.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Extensions/PieceExtension.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Extensions/LinqExtension.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Extensions/PositionExtension.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Enums/MovementTypeEnum.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Movement.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Rook.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Extensions/BoardExtensions.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/WhitePawn.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/BlackPawn.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/PromotionMove.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/Board.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/Piece.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/BlackKing.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/BlackBishop.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/Black/BlackKnight.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/Black/BlackPawn.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/Black/BlackPiece.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/Black/BlackQueen.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/Black/BlackRook.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/White/WhiteRook.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/White/WhitePiece.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/White/WhiteKnight.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/White/WhitePawn.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/White/WhiteQueen.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/White/WhiteKing.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/NewDirectory1/White/WhiteBishop.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/EnPassantCaptureMove.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Interfaces/Interfaces.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackBishop.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackRook.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackQueen.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackPawn.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackKnight.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackKing.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteBishop.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKing.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhitePawn.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteQueen.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteRook.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKnight.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackPiece.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhitePiece.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Enums/PieceNameEnum.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/PromotionMove.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Piece.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Move.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Pieces/Board.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Events/MoveEventArgs.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/MoveEvents.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Events/CancelMoveEventArgs.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Game.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Constants/OpponentsSettings.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Logic/OpponentsInfo.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine.Tests/UnitTest1.cs" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -300,6 +459,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -316,39 +477,18 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
               <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Extensions" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Logic" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Models" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Models" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Pieces" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Utilities" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ChessEngine.Tests" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,11 +520,21 @@
       <updated>1538587110357</updated>
       <workItem from="1538587111642" duration="2371000" />
       <workItem from="1538620430055" duration="4979000" />
+      <workItem from="1549506778872" duration="46000" />
+      <workItem from="1549506848183" duration="185000" />
+      <workItem from="1549580498365" duration="232000" />
+      <workItem from="1549581123556" duration="52000" />
+      <workItem from="1549598039369" duration="357000" />
+      <workItem from="1549598417201" duration="186000" />
+      <workItem from="1549601905342" duration="69000" />
+      <workItem from="1549601999696" duration="34000" />
+      <workItem from="1549602108038" duration="2846000" />
+      <workItem from="1549605448396" duration="1946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7350000" />
+    <option name="totallyTimeSpent" value="13303000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,9 +549,11 @@
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28898427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -414,13 +566,14 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.119444445" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.06527778" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,9 +581,6 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -442,354 +592,1083 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Class1.cs" />
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs">
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Bishop.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Movement.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/NewDirectory1/Utils.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/CastlingMove.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="35" />
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
-            <marker date="1538587927138" expanded="true" signature="79:132" ph="{...}" />
+            <marker date="1549604050088" expanded="true" signature="41:1653" ph="{...}" />
+            <marker date="1549604050088" expanded="true" signature="48:116" ph="/// Implements a castling move. ... " />
+            <marker date="1549604050088" expanded="true" signature="160:1651" ph="{...}" />
+            <marker date="1549604050088" expanded="true" signature="175:238" ph="/// The rook move. ... " />
+            <marker date="1549604050088" expanded="true" signature="271:334" ph="/// The rook move. ... " />
+            <marker date="1549604050088" expanded="true" signature="386:677" ph="/// Constructor. ... " />
+            <marker date="1549604050088" expanded="true" signature="797:855" ph="{...}" />
+            <marker date="1549604050088" expanded="true" signature="865:1018" ph="/// Makes the move, it doesn't check if it's a valid move. ... " />
+            <marker date="1549604050088" expanded="true" signature="1067:1235" ph="{...}" />
+            <marker date="1549604050088" expanded="true" signature="1245:1403" ph="/// Takes back the move, it doesn't check if it's a valid move. ... " />
+            <marker date="1549604050088" expanded="true" signature="1456:1643" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/TeamEnum'.cs">
+    <entry file="file://$USER_HOME$/Downloads/Valil.Chess.WinFX/Valil.Chess.Model/Utils.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="41" />
+          <folding>
+            <marker date="1124854020000" expanded="false" signature="6:154" ph="..." />
+            <marker date="1124854020000" expanded="true" signature="183:48047" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="190:265" ph="/// Implements some utilities methods. ... " />
+            <marker date="1124854020000" expanded="true" signature="295:48045" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="310:450" ph="/// Array containing 789 random 64-bit integers. ... " />
+            <marker date="1124854020000" expanded="true" signature="506:9678" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="9689:9788" ph="/// Hashtable for converting a char to the piece type. ... " />
+            <marker date="1124854020000" expanded="true" signature="9879:9993" ph="/// Hashtable for converting a piece type to its representation char. ... " />
+            <marker date="1124854020000" expanded="true" signature="10084:10204" ph="/// Hashtable for converting a piece type to its lower representation char. ... " />
+            <marker date="1124854020000" expanded="true" signature="10300:10420" ph="/// Hashtable for converting a piece type to its upper representation char. ... " />
+            <marker date="1124854020000" expanded="true" signature="10516:10626" ph="/// Hashtable for finding the Zobrist key index of a piece type.  ... " />
+            <marker date="1124854020000" expanded="true" signature="10714:10781" ph="/// Static contructor. ... " />
+            <marker date="1124854020000" expanded="true" signature="10804:12451" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="11840:12441" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="12461:12665" ph="/// Gets a piece from its char representation. ... " />
+            <marker date="1124854020000" expanded="true" signature="12727:12916" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="12926:13187" ph="/// Gets a promotion type. ... " />
+            <marker date="1124854020000" expanded="true" signature="13259:13396" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="13406:13583" ph="/// Gets the board FEN (Forsyth-Edwards notation). ... " />
+            <marker date="1124854020000" expanded="true" signature="13632:16608" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="13944:15175" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="14076:14448" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="14213:14381" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="14546:14989" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="14683:14851" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="15052:15161" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="15265:15370" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="15686:16048" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="16065:16137" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="16618:16872" ph="/// Gets a board from its FEN (Forsyth-Edwards notation). ... " />
+            <marker date="1124854020000" expanded="true" signature="16924:21771" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="16950:21558" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="17345:18216" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="17570:17688" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="17801:17915" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="18033:18168" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="18318:18399" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="18443:18524" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="18545:18668" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="18782:18847" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="18868:19834" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="18975:19745" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="19941:20057" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="20078:20544" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="20271:20406" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="20618:20785" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="20824:20930" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="21040:21176" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="21215:21321" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="21650:21761" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="21781:21960" ph="/// Verifies if the board is in a valid state, throws ArgumentException if it's not. ... " />
+            <marker date="1124854020000" expanded="true" signature="22012:28717" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="22179:22318" ph="/* hastable to remember the number of each piece type ... */" />
+            <marker date="1124854020000" expanded="true" signature="22647:23503" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="22705:23489" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="23050:23185" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="23336:23471" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="23517:23733" ph="/* if there are too many White pieces ... */" />
+            <marker date="1124854020000" expanded="true" signature="23972:24087" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="24101:24317" ph="/* if there are too many Black pieces ... */" />
+            <marker date="1124854020000" expanded="true" signature="24556:24671" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="24756:24873" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="24921:25029" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="25114:25231" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="25279:25387" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="25592:25718" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="25922:26047" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="26252:26378" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="26582:26707" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="27909:28021" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="28093:28204" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="28286:28397" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="28590:28707" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="28727:28903" ph="/// Computes the board hash using Zobrist method. ... " />
+            <marker date="1124854020000" expanded="true" signature="28950:31449" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="29243:29695" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="29347:29681" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="29386:29562" ph="/* XOR the Zobrist key which coresponds to type of piece and for this square ... */" />
+            <marker date="1124854020000" expanded="true" signature="29806:29903" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="30028:30129" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="30181:30282" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="30333:30434" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="30486:30587" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="30725:31289" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="30871:31033" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="31111:31274" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="31459:31702" ph="/// Gets the move CAN (coordinate algebraic notation) without checking the status of the game or if it's a valid  ... " />
+            <marker date="1124854020000" expanded="true" signature="31749:32390" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="32219:32345" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="32400:32702" ph="/// Gets a move from its CAN (coordinate algebraic notation). ... " />
+            <marker date="1124854020000" expanded="true" signature="32763:34085" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="33266:33377" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="33940:34049" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="34095:34394" ph="/// Get the SAN (standard algebraic notation) index for a move - move number and the side to move ... " />
+            <marker date="1124854020000" expanded="true" signature="34446:35053" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="34869:34929" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="34946:35008" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="35063:35453" ph="/// Gets the end of the SAN (standard algebraic notation) for a move - promotion and check/checkmate representati ... " />
+            <marker date="1124854020000" expanded="true" signature="35514:36442" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="35897:36077" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="36127:36231" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="36289:36397" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="36452:36853" ph="/// Gets the begin of the SAN (standard algebraic notation) for a move - without promotion or check/checkmate rep ... " />
+            <marker date="1124854020000" expanded="true" signature="36916:41123" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="37336:37722" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="37414:37526" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="37595:37708" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="37739:41078" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="37933:38191" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="38066:38173" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="38212:40799" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="38324:38532" ph="/* add disambiguation ... */" />
+            <marker date="1124854020000" expanded="true" signature="38660:38967" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="38833:38945" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="39022:40781" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="39212:39492" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="39313:39466" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="39535:39703" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="39732:40759" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="39938:40246" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="40047:40216" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="40293:40477" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="40510:40733" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="40900:40972" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="41133:41433" ph="/// Gets a move from its SAN (standard algebraic notation). ... " />
+            <marker date="1124854020000" expanded="true" signature="41494:45904" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="41893:42206" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="41962:42192" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="42065:42174" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="42287:42600" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="42356:42586" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="42459:42568" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="42617:45680" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="42822:42887" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="42919:43042" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="43166:43273" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="43393:43516" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="43761:43826" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="43999:44112" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="44285:44398" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="44517:44626" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="44726:45403" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="45276:45385" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="45510:45666" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="45711:45768" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="45785:45894" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="45914:46147" ph="/// Gets a square position from its rank and file chars. ... " />
+            <marker date="1124854020000" expanded="true" signature="46201:46388" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="46269:46324" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="46398:46560" ph="/// Gets the square notation. ... " />
+            <marker date="1124854020000" expanded="true" signature="46615:46909" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="46919:47070" ph="/// Gets file as an int. ... " />
+            <marker date="1124854020000" expanded="true" signature="47113:47161" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="47171:47340" ph="/// Gets the file char for a square. ... " />
+            <marker date="1124854020000" expanded="true" signature="47398:47475" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="47485:47636" ph="/// Gets rank as an int. ... " />
+            <marker date="1124854020000" expanded="true" signature="47679:47727" ph="{...}" />
+            <marker date="1124854020000" expanded="true" signature="47737:47906" ph="/// Gets the rank char for a square. ... " />
+            <marker date="1124854020000" expanded="true" signature="47964:48039" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Board.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Position.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IBoardBuilder.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="24" />
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="38" />
           <folding>
-            <marker date="1538588465483" expanded="true" signature="61:102" ph="{...}" />
+            <marker date="1549603304404" expanded="true" signature="79:131" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Game.cs">
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Builders/BoardBuilder.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/BoardExtensions.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/PieceExtension.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/EnPassantCaptureMove.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
           <folding>
-            <marker date="1538589502560" expanded="true" signature="28:107" ph="{...}" />
-            <marker date="1538589502560" expanded="true" signature="52:105" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IBoardBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <marker date="1538620527148" expanded="true" signature="59:141" ph="{...}" />
-            <marker date="1538620527148" expanded="true" signature="96:139" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Interfaces/IPiece.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <marker date="1538620643006" expanded="false" signature="6:65" ph="..." />
-            <marker date="1538620643006" expanded="true" signature="106:280" ph="{...}" />
-            <marker date="1538620643006" expanded="true" signature="136:278" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Bishop.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <marker date="1538620646950" expanded="false" signature="6:102" ph="..." />
-            <marker date="1538620646950" expanded="true" signature="139:518" ph="{...}" />
-            <marker date="1538620646950" expanded="true" signature="174:516" ph="{...}" />
-            <marker date="1538620646950" expanded="true" signature="424:510" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/King.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <marker date="1538620652677" expanded="false" signature="6:102" ph="..." />
-            <marker date="1538620652677" expanded="true" signature="139:504" ph="{...}" />
-            <marker date="1538620652677" expanded="true" signature="172:502" ph="{...}" />
-            <marker date="1538620652677" expanded="true" signature="410:496" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Knight.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <marker date="1538620656652" expanded="false" signature="6:102" ph="..." />
-            <marker date="1538620656652" expanded="true" signature="139:516" ph="{...}" />
-            <marker date="1538620656652" expanded="true" signature="174:514" ph="{...}" />
-            <marker date="1538620656652" expanded="true" signature="422:508" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Queen.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <marker date="1538620664527" expanded="false" signature="6:102" ph="..." />
-            <marker date="1538620664527" expanded="true" signature="139:507" ph="{...}" />
-            <marker date="1538620664527" expanded="true" signature="173:505" ph="{...}" />
-            <marker date="1538620664527" expanded="true" signature="413:499" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Pawn.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <marker date="1538620660485" expanded="false" signature="6:102" ph="..." />
-            <marker date="1538620660485" expanded="true" signature="139:512" ph="{...}" />
-            <marker date="1538620660485" expanded="true" signature="172:510" ph="{...}" />
-            <marker date="1538620660485" expanded="true" signature="418:504" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Board.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-          <folding>
-            <marker date="1538587258357" expanded="true" signature="66:152" ph="{...}" />
-            <marker date="1538587258357" expanded="true" signature="91:150" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Position.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <marker date="1538588878194" expanded="true" signature="28:228" ph="{...}" />
-            <marker date="1538588878194" expanded="true" signature="35:109" ph="/// Describes a position on the board ... " />
-            <marker date="1538588878194" expanded="true" signature="135:226" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/PieceNameEnum.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <marker date="1538587696632" expanded="true" signature="34:168" ph="{...}" />
-            <marker date="1538587696632" expanded="true" signature="66:166" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/PieceExtension.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <marker date="1538627079610" expanded="true" signature="6:141" ph="..." />
-            <marker date="1538627079610" expanded="true" signature="175:1393" ph="{...}" />
-            <marker date="1538627079610" expanded="true" signature="216:1391" ph="{...}" />
-            <marker date="1538627079610" expanded="true" signature="231:504" ph="/// Moves the piece given a new position ... " />
-            <marker date="1538627079610" expanded="true" signature="576:1385" ph="{...}" />
-            <marker date="1538627079610" expanded="true" signature="627:1375" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Builders/BoardBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
-          <folding>
-            <marker date="1538627079609" expanded="false" signature="6:260" ph="..." />
-            <marker date="1538627079609" expanded="true" signature="292:3894" ph="{...}" />
-            <marker date="1538627079609" expanded="true" signature="340:3892" ph="{...}" />
-            <marker date="1538627079609" expanded="true" signature="426:540" ph="/// Creates a new instance of a board ... " />
-            <marker date="1538627079609" expanded="true" signature="577:838" ph="{...}" />
-            <marker date="1538627079609" expanded="true" signature="848:1048" ph="/// Sets up the initial board ... " />
-            <marker date="1538627079609" expanded="true" signature="1108:3886" ph="{...}" />
-            <marker date="1538627079609" expanded="true" signature="1145:3876" ph="{...}" />
-            <marker date="1538627079609" expanded="true" signature="1248:2029" ph="{...}" />
-            <marker date="1538627079609" expanded="true" signature="2969:3750" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/LinqExtension.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding>
-            <marker date="1538625198867" expanded="false" signature="6:47" ph="..." />
-            <marker date="1538625198867" expanded="true" signature="81:971" ph="{...}" />
-            <marker date="1538625198867" expanded="true" signature="121:969" ph="{...}" />
-            <marker date="1538625198867" expanded="true" signature="136:341" ph="/// ForEach for IEnumerable ... " />
-            <marker date="1538625198867" expanded="true" signature="429:518" ph="{...}" />
-            <marker date="1538625198867" expanded="true" signature="536:778" ph="/// Convert IEnumerable to HashSet ... " />
-            <marker date="1538625198867" expanded="true" signature="890:963" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/PositionExtension.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <marker date="1538625231298" expanded="true" signature="59:1896" ph="{...}" />
-            <marker date="1538625231298" expanded="true" signature="103:1894" ph="{...}" />
-            <marker date="1538625231298" expanded="true" signature="118:368" ph="/// Increments the I property of position and returns a new position with updated props ... " />
-            <marker date="1538625231298" expanded="true" signature="475:550" ph="{...}" />
-            <marker date="1538625231298" expanded="true" signature="561:811" ph="/// Increments the J property of position and returns a new position with updated props ... " />
-            <marker date="1538625231298" expanded="true" signature="918:993" ph="{...}" />
-            <marker date="1538625231298" expanded="true" signature="1012:1262" ph="/// Decrements the I property of position and returns a new position with updated props ... " />
-            <marker date="1538625231298" expanded="true" signature="1369:1444" ph="{...}" />
-            <marker date="1538625231298" expanded="true" signature="1455:1705" ph="/// Decrements the J property of position and returns a new position with updated props ... " />
-            <marker date="1538625231298" expanded="true" signature="1812:1887" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="38" />
-          <folding>
-            <marker date="1538625969909" expanded="true" signature="6:96" ph="..." />
-            <marker date="1538625969909" expanded="true" signature="130:259" ph="{...}" />
-            <marker date="1538625969909" expanded="true" signature="171:257" ph="{...}" />
+            <marker date="1549604050085" expanded="true" signature="41:1864" ph="{...}" />
+            <marker date="1549604050085" expanded="true" signature="48:127" ph="/// Implements an en passant capture move. ... " />
+            <marker date="1549604050085" expanded="true" signature="179:1862" ph="{...}" />
+            <marker date="1549604050085" expanded="true" signature="194:274" ph="/// The en passant target position. ... " />
+            <marker date="1549604050085" expanded="true" signature="363:597" ph="/// Constructor. ... " />
+            <marker date="1549604050085" expanded="true" signature="710:730" ph="{...}" />
+            <marker date="1549604050085" expanded="true" signature="740:892" ph="/// Makes the move, it doesn't check if it's a valid move ... " />
+            <marker date="1549604050085" expanded="true" signature="941:1329" ph="{...}" />
+            <marker date="1549604050085" expanded="true" signature="1339:1496" ph="/// Takes back the move, it doesn't check if it's a valid move ... " />
+            <marker date="1549604050085" expanded="true" signature="1549:1856" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/MovementTypeEnum.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="32" />
+        <state relative-caret-position="112">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <marker date="1538626189450" expanded="true" signature="34:117" ph="{...}" />
-            <marker date="1538626189450" expanded="true" signature="69:115" ph="{...}" />
+            <marker date="1549506773241" expanded="true" signature="69:115" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Movement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <marker date="1538626203794" expanded="false" signature="6:68" ph="..." />
-            <marker date="1538626203794" expanded="true" signature="98:443" ph="{...}" />
-            <marker date="1538626203794" expanded="true" signature="126:441" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs">
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/TeamEnum'.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
-            <marker date="1538626847154" expanded="true" signature="6:57" ph="..." />
-            <marker date="1538626847154" expanded="true" signature="91:190" ph="{...}" />
-            <marker date="1538626847154" expanded="true" signature="125:188" ph="{...}" />
+            <marker date="1549506773242" expanded="true" signature="61:102" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs">
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Interfaces/Interfaces.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="285">
+          <caret line="75" column="34" lean-forward="true" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
           <folding>
-            <marker date="1538626944610" expanded="true" signature="6:98" ph="..." />
-            <marker date="1538626944610" expanded="true" signature="131:1461" ph="{...}" />
-            <marker date="1538626944610" expanded="true" signature="172:1459" ph="{...}" />
-            <marker date="1538626944610" expanded="true" signature="187:413" ph="/// Validates an action ... " />
-            <marker date="1538626944610" expanded="true" signature="501:1453" ph="{...}" />
-            <marker date="1538626944610" expanded="true" signature="654:711" ph="{...}" />
-            <marker date="1538626944610" expanded="true" signature="788:846" ph="{...}" />
-            <marker date="1538626944610" expanded="true" signature="925:983" ph="{...}" />
-            <marker date="1538626944610" expanded="true" signature="1110:1168" ph="{...}" />
-            <marker date="1538626944610" expanded="true" signature="1182:1303" ph="/* Cannot override the piece from the same team ... */" />
-            <marker date="1538626944610" expanded="true" signature="1359:1417" ph="{...}" />
+            <marker date="1549603502259" expanded="true" signature="79:137" ph="/// Bishop interface. ... " />
+            <marker date="1549603502259" expanded="true" signature="176:232" ph="/// King interface. ... " />
+            <marker date="1549603502259" expanded="true" signature="259:988" ph="{...}" />
+            <marker date="1549603502259" expanded="true" signature="274:556" ph="/// Verifies if the king can castle long. ... " />
+            <marker date="1549603502259" expanded="true" signature="632:915" ph="/// Verifies if the king can castle short. ... " />
+            <marker date="1549603502259" expanded="true" signature="994:1052" ph="/// Knight interface. ... " />
+            <marker date="1549603502259" expanded="true" signature="1091:1147" ph="/// Pawn interface. ... " />
+            <marker date="1549603502259" expanded="true" signature="1174:1910" ph="{...}" />
+            <marker date="1549603502259" expanded="true" signature="1189:1470" ph="/// Checks if it's the two-squares move. ... " />
+            <marker date="1549603502259" expanded="true" signature="1549:1829" ph="/// Checks if it's the en passant move. ... " />
+            <marker date="1549603502259" expanded="true" signature="1916:1973" ph="/// Queen interface. ... " />
+            <marker date="1549603502259" expanded="true" signature="2011:2067" ph="/// Rook interface. ... " />
+            <marker date="1549603502259" expanded="true" signature="2128:2229" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Rook.cs">
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackRook.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="429">
+          <caret line="63" column="74" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="74" />
           <folding>
-            <marker date="1538627080770" expanded="false" signature="6:102" ph="..." />
-            <marker date="1538627080770" expanded="true" signature="139:512" ph="{...}" />
-            <marker date="1538627080770" expanded="true" signature="172:510" ph="{...}" />
-            <marker date="1538627080770" expanded="true" signature="418:504" ph="{...}" />
+            <marker date="1549603690212" expanded="false" signature="6:68" ph="..." />
+            <marker date="1549603690212" expanded="true" signature="111:2170" ph="{...}" />
+            <marker date="1549603690212" expanded="true" signature="118:183" ph="/// Implements a black rook. ... " />
+            <marker date="1549603690212" expanded="true" signature="237:2168" ph="{...}" />
+            <marker date="1549603690212" expanded="true" signature="252:703" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549603690212" expanded="true" signature="776:1108" ph="{...}" />
+            <marker date="1549603690212" expanded="true" signature="1118:1382" ph="/// Generates the move. ... " />
+            <marker date="1549603690212" expanded="true" signature="1457:2016" ph="{...}" />
+            <marker date="1549603690212" expanded="true" signature="1606:1932" ph="{...}" />
+            <marker date="1549603690212" expanded="true" signature="1658:1751" ph="{...}" />
+            <marker date="1549603690212" expanded="true" signature="1794:1888" ph="{...}" />
+            <marker date="1549603690212" expanded="true" signature="1949:2006" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs">
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackQueen.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="445">
+          <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
           <folding>
-            <marker date="1538627626882" expanded="true" signature="6:101" ph="..." />
-            <marker date="1538627626882" expanded="true" signature="130:503" ph="{...}" />
-            <marker date="1538627626882" expanded="true" signature="172:501" ph="{...}" />
-            <marker date="1538627626882" expanded="true" signature="302:372" ph="{...}" />
-            <marker date="1538627626882" expanded="true" signature="438:495" ph="{...}" />
+            <marker date="1549603696978" expanded="false" signature="6:82" ph="..." />
+            <marker date="1549603696978" expanded="true" signature="125:1392" ph="{...}" />
+            <marker date="1549603696978" expanded="true" signature="132:198" ph="/// Implements a black queen. ... " />
+            <marker date="1549603696978" expanded="true" signature="254:1390" ph="{...}" />
+            <marker date="1549603696978" expanded="true" signature="269:720" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549603696978" expanded="true" signature="793:1237" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs">
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackPawn.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="381">
+          <caret line="152" column="74" selection-start-line="152" selection-start-column="74" selection-end-line="152" selection-end-column="74" />
           <folding>
-            <marker date="1538626893818" expanded="true" signature="6:308" ph="..." />
-            <marker date="1538626893818" expanded="true" signature="337:3495" ph="{...}" />
-            <marker date="1538626893818" expanded="true" signature="393:3493" ph="{...}" />
-            <marker date="1538626893818" expanded="true" signature="475:2956" ph="{...}" />
-            <marker date="1538626893818" expanded="true" signature="526:2946" ph="{...}" />
-            <marker date="1538626893818" expanded="true" signature="651:885" ph="{...}" />
-            <marker date="1538626893818" expanded="true" signature="1154:1332" ph="{...}" />
-            <marker date="1538626893818" expanded="true" signature="1620:1798" ph="{...}" />
-            <marker date="1538626893818" expanded="true" signature="1968:2274" ph="{...}" />
-            <marker date="1538626893818" expanded="true" signature="2386:2798" ph="{...}" />
-            <marker date="1538626893818" expanded="true" signature="2974:3225" ph="/// Returns valid actions ... " />
-            <marker date="1538626893818" expanded="true" signature="3305:3487" ph="{...}" />
+            <marker date="1549604050090" expanded="false" signature="6:160" ph="..." />
+            <marker date="1549604050090" expanded="true" signature="203:6524" ph="{...}" />
+            <marker date="1549604050090" expanded="true" signature="210:275" ph="/// Implements a black pawn. ... " />
+            <marker date="1549604050090" expanded="true" signature="329:6522" ph="{...}" />
+            <marker date="1549604050090" expanded="true" signature="344:795" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549604050090" expanded="true" signature="868:1724" ph="{...}" />
+            <marker date="1549604050090" expanded="true" signature="1734:2064" ph="/// Verifies if the piece attacks the &quot;to&quot; square, on this board, from the &quot;from&quot; square. ... " />
+            <marker date="1549604050090" expanded="true" signature="2132:2564" ph="{...}" />
+            <marker date="1549604050090" expanded="true" signature="2155:2276" ph="/* a pawn attacks one square in front diagonaly ... */" />
+            <marker date="1549604050090" expanded="true" signature="2574:2855" ph="/// Checks if it's the two-squares move. ... " />
+            <marker date="1549604050090" expanded="true" signature="2923:3246" ph="{...}" />
+            <marker date="1549604050090" expanded="true" signature="3256:3536" ph="/// Checks if it's the en passant move. ... " />
+            <marker date="1549604050090" expanded="true" signature="3610:3966" ph="{...}" />
+            <marker date="1549604050090" expanded="true" signature="3976:4240" ph="/// Generates the move. ... " />
+            <marker date="1549604050090" expanded="true" signature="4315:6370" ph="{...}" />
+            <marker date="1549604050090" expanded="true" signature="4451:5038" ph="{...}" />
+            <marker date="1549604050090" expanded="true" signature="5125:6286" ph="{...}" />
+            <marker date="1549604050090" expanded="true" signature="5292:5447" ph="{...}" />
+            <marker date="1549604050090" expanded="true" signature="5549:6242" ph="{...}" />
+            <marker date="1549604050090" expanded="true" signature="5588:5774" ph="/* we don't need to verify for check again ... */" />
+            <marker date="1549604050090" expanded="true" signature="6303:6360" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Extensions/BoardExtensions.cs">
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackKnight.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+          <folding>
+            <marker date="1549603716091" expanded="false" signature="6:82" ph="..." />
+            <marker date="1549603716091" expanded="true" signature="125:1369" ph="{...}" />
+            <marker date="1549603716091" expanded="true" signature="132:199" ph="/// Implements a black knight. ... " />
+            <marker date="1549603716091" expanded="true" signature="257:1367" ph="{...}" />
+            <marker date="1549603716091" expanded="true" signature="272:723" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549603716091" expanded="true" signature="796:1213" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackKing.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="141" selection-start-line="141" selection-end-line="144" selection-end-column="76" />
+          <folding>
+            <marker date="1549604050093" expanded="false" signature="6:82" ph="..." />
+            <marker date="1549604050093" expanded="true" signature="164:6346" ph="{...}" />
+            <marker date="1549604050093" expanded="true" signature="171:236" ph="/// Implements a black king. ... " />
+            <marker date="1549604050093" expanded="true" signature="290:6344" ph="{...}" />
+            <marker date="1549604050093" expanded="true" signature="305:756" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549604050093" expanded="true" signature="829:1263" ph="{...}" />
+            <marker date="1549604050093" expanded="true" signature="1273:1603" ph="/// Verifies if the piece attacks the &quot;to&quot; square, on this board, from the &quot;from&quot; square. ... " />
+            <marker date="1549604050093" expanded="true" signature="1671:1989" ph="{...}" />
+            <marker date="1549604050093" expanded="true" signature="1694:1791" ph="/* castling is not considered an attack ... */" />
+            <marker date="1549604050093" expanded="true" signature="1999:2281" ph="/// Verifies if the king can castle long. ... " />
+            <marker date="1549604050093" expanded="true" signature="2346:2836" ph="{...}" />
+            <marker date="1549604050093" expanded="true" signature="2846:3129" ph="/// Verifies if the king can castle short. ... " />
+            <marker date="1549604050093" expanded="true" signature="3195:3685" ph="{...}" />
+            <marker date="1549604050093" expanded="true" signature="3695:3959" ph="/// Generates the move. ... " />
+            <marker date="1549604050093" expanded="true" signature="4034:6190" ph="{...}" />
+            <marker date="1549604050093" expanded="true" signature="4081:4235" ph="/* if it's a castling move ... */" />
+            <marker date="1549604050093" expanded="true" signature="4283:4916" ph="{...}" />
+            <marker date="1549604050093" expanded="true" signature="4930:5085" ph="/* if it's a castling move ... */" />
+            <marker date="1549604050093" expanded="true" signature="5134:5768" ph="{...}" />
+            <marker date="1549604050093" expanded="true" signature="5782:5856" ph="/* if it's a regular move ... */" />
+            <marker date="1549604050093" expanded="true" signature="5941:6106" ph="{...}" />
+            <marker date="1549604050093" expanded="true" signature="6123:6180" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteBishop.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="27" selection-start-line="27" selection-end-line="30" selection-end-column="76" />
+          <folding>
+            <marker date="1549603743982" expanded="false" signature="6:82" ph="..." />
+            <marker date="1549603743982" expanded="true" signature="125:1240" ph="{...}" />
+            <marker date="1549603743982" expanded="true" signature="132:199" ph="/// Implements a white bishop. ... " />
+            <marker date="1549603743982" expanded="true" signature="257:1238" ph="{...}" />
+            <marker date="1549603743982" expanded="true" signature="272:723" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549603743982" expanded="true" signature="796:1084" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKing.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="142" column="73" selection-start-line="142" selection-start-column="73" selection-end-line="142" selection-end-column="73" />
+          <folding>
+            <marker date="1549604050096" expanded="false" signature="6:82" ph="..." />
+            <marker date="1549604050096" expanded="true" signature="164:6156" ph="{...}" />
+            <marker date="1549604050096" expanded="true" signature="171:236" ph="/// Implements a white king. ... " />
+            <marker date="1549604050096" expanded="true" signature="290:6154" ph="{...}" />
+            <marker date="1549604050096" expanded="true" signature="305:756" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549604050096" expanded="true" signature="829:1263" ph="{...}" />
+            <marker date="1549604050096" expanded="true" signature="1273:1603" ph="/// Verifies if the piece attacks the &quot;to&quot; square, on this board, from the &quot;from&quot; square. ... " />
+            <marker date="1549604050096" expanded="true" signature="1671:1989" ph="{...}" />
+            <marker date="1549604050096" expanded="true" signature="1694:1791" ph="/* castling is not considered an attack ... */" />
+            <marker date="1549604050096" expanded="true" signature="1999:2281" ph="/// Verifies if the king can castle long. ... " />
+            <marker date="1549604050096" expanded="true" signature="2346:2836" ph="{...}" />
+            <marker date="1549604050096" expanded="true" signature="2846:3129" ph="/// Verifies if the king can castle short. ... " />
+            <marker date="1549604050096" expanded="true" signature="3195:3687" ph="{...}" />
+            <marker date="1549604050096" expanded="true" signature="3697:3961" ph="/// Generates the move. ... " />
+            <marker date="1549604050096" expanded="true" signature="4036:6002" ph="{...}" />
+            <marker date="1549604050096" expanded="true" signature="4083:4237" ph="/* if it's a castling move ... */" />
+            <marker date="1549604050096" expanded="true" signature="4285:4824" ph="{...}" />
+            <marker date="1549604050096" expanded="true" signature="4838:4993" ph="/* if it's a castling move ... */" />
+            <marker date="1549604050096" expanded="true" signature="5042:5581" ph="{...}" />
+            <marker date="1549604050096" expanded="true" signature="5595:5668" ph="/* if it's a regular move ... */" />
+            <marker date="1549604050096" expanded="true" signature="5753:5918" ph="{...}" />
+            <marker date="1549604050096" expanded="true" signature="5935:5992" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhitePawn.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="150" column="73" selection-start-line="150" selection-start-column="73" selection-end-line="150" selection-end-column="73" />
+          <folding>
+            <marker date="1549604050099" expanded="false" signature="6:121" ph="..." />
+            <marker date="1549604050099" expanded="true" signature="203:6376" ph="{...}" />
+            <marker date="1549604050099" expanded="true" signature="210:275" ph="/// Implements a white pawn. ... " />
+            <marker date="1549604050099" expanded="true" signature="329:6374" ph="{...}" />
+            <marker date="1549604050099" expanded="true" signature="344:795" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549604050099" expanded="true" signature="868:1721" ph="{...}" />
+            <marker date="1549604050099" expanded="true" signature="1731:2061" ph="/// Verifies if the piece attacks the &quot;to&quot; square, on this board, from the &quot;from&quot; square. ... " />
+            <marker date="1549604050099" expanded="true" signature="2129:2560" ph="{...}" />
+            <marker date="1549604050099" expanded="true" signature="2152:2273" ph="/* a pawn attacks one square in front diagonaly ... */" />
+            <marker date="1549604050099" expanded="true" signature="2570:2851" ph="/// Checks if it's the two-squares move. ... " />
+            <marker date="1549604050099" expanded="true" signature="2919:3284" ph="{...}" />
+            <marker date="1549604050099" expanded="true" signature="3294:3574" ph="/// Checks if it's the en passant move. ... " />
+            <marker date="1549604050099" expanded="true" signature="3648:4004" ph="{...}" />
+            <marker date="1549604050099" expanded="true" signature="4014:4278" ph="/// Generates the move. ... " />
+            <marker date="1549604050099" expanded="true" signature="4353:6222" ph="{...}" />
+            <marker date="1549604050099" expanded="true" signature="4489:5005" ph="{...}" />
+            <marker date="1549604050099" expanded="true" signature="5093:6138" ph="{...}" />
+            <marker date="1549604050099" expanded="true" signature="5260:5394" ph="{...}" />
+            <marker date="1549604050099" expanded="true" signature="5475:6094" ph="{...}" />
+            <marker date="1549604050099" expanded="true" signature="5514:5700" ph="/* we don't need to verify for check again ... */" />
+            <marker date="1549604050099" expanded="true" signature="6155:6212" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteQueen.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+          <folding>
+            <marker date="1549603821366" expanded="false" signature="6:82" ph="..." />
+            <marker date="1549603821366" expanded="true" signature="125:1412" ph="{...}" />
+            <marker date="1549603821366" expanded="true" signature="132:198" ph="/// Implements a white queen. ... " />
+            <marker date="1549603821366" expanded="true" signature="254:1410" ph="{...}" />
+            <marker date="1549603821366" expanded="true" signature="269:720" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549603821366" expanded="true" signature="793:1257" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteRook.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="62" column="73" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
+          <folding>
+            <marker date="1549603829678" expanded="false" signature="6:68" ph="..." />
+            <marker date="1549603829678" expanded="true" signature="111:2168" ph="{...}" />
+            <marker date="1549603829678" expanded="true" signature="118:183" ph="/// Implements a white rook. ... " />
+            <marker date="1549603829678" expanded="true" signature="237:2166" ph="{...}" />
+            <marker date="1549603829678" expanded="true" signature="252:703" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549603829678" expanded="true" signature="776:1107" ph="{...}" />
+            <marker date="1549603829678" expanded="true" signature="1117:1381" ph="/// Generates the move. ... " />
+            <marker date="1549603829678" expanded="true" signature="1456:2014" ph="{...}" />
+            <marker date="1549603829678" expanded="true" signature="1605:1930" ph="{...}" />
+            <marker date="1549603829678" expanded="true" signature="1657:1750" ph="{...}" />
+            <marker date="1549603829678" expanded="true" signature="1793:1887" ph="{...}" />
+            <marker date="1549603829678" expanded="true" signature="1947:2004" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKnight.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding>
+            <marker date="1549603833775" expanded="false" signature="6:82" ph="..." />
+            <marker date="1549603833775" expanded="true" signature="125:1386" ph="{...}" />
+            <marker date="1549603833775" expanded="true" signature="132:199" ph="/// Implements a white knight. ... " />
+            <marker date="1549603833775" expanded="true" signature="257:1384" ph="{...}" />
+            <marker date="1549603833775" expanded="true" signature="272:723" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549603833775" expanded="true" signature="796:1213" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackPiece.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <marker date="1549603850063" expanded="true" signature="74:2019" ph="{...}" />
+            <marker date="1549603850063" expanded="true" signature="81:153" ph="/// Implements a black chess piece. ... " />
+            <marker date="1549603850063" expanded="true" signature="198:2017" ph="{...}" />
+            <marker date="1549603850063" expanded="true" signature="213:592" ph="/// Generates the move. ... " />
+            <marker date="1549603850063" expanded="true" signature="667:1192" ph="{...}" />
+            <marker date="1549603850063" expanded="true" signature="767:1108" ph="{...}" />
+            <marker date="1549603850063" expanded="true" signature="1125:1182" ph="{...}" />
+            <marker date="1549603850063" expanded="true" signature="1202:1653" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549603850063" expanded="true" signature="1726:2011" ph="{...}" />
+            <marker date="1549603850063" expanded="true" signature="1749:1940" ph="/* the first condition for a piece to be able to move ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhitePiece.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <marker date="1549603859831" expanded="true" signature="74:1924" ph="{...}" />
+            <marker date="1549603859831" expanded="true" signature="81:153" ph="/// Implements a white chess piece. ... " />
+            <marker date="1549603859831" expanded="true" signature="198:1922" ph="{...}" />
+            <marker date="1549603859831" expanded="true" signature="213:592" ph="/// Generates the move. ... " />
+            <marker date="1549603859831" expanded="true" signature="667:1097" ph="{...}" />
+            <marker date="1549603859831" expanded="true" signature="767:1013" ph="{...}" />
+            <marker date="1549603859831" expanded="true" signature="1030:1087" ph="{...}" />
+            <marker date="1549603859831" expanded="true" signature="1107:1558" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549603859831" expanded="true" signature="1631:1916" ph="{...}" />
+            <marker date="1549603859831" expanded="true" signature="1654:1845" ph="/* the first condition for a piece to be able to move ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Enums/PieceNameEnum.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <marker date="1549603866510" expanded="true" signature="66:166" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackBishop.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <marker date="1549603660529" expanded="false" signature="6:82" ph="..." />
+            <marker date="1549603660529" expanded="true" signature="125:1232" ph="{...}" />
+            <marker date="1549603660529" expanded="true" signature="132:199" ph="/// Implements a black bishop. ... " />
+            <marker date="1549603660529" expanded="true" signature="257:1230" ph="{...}" />
+            <marker date="1549603660529" expanded="true" signature="272:723" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549603660529" expanded="true" signature="796:1084" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/PromotionMove.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1107">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <marker date="1549604061169" expanded="false" signature="6:128" ph="..." />
+            <marker date="1549604061169" expanded="true" signature="171:4073" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="178:247" ph="/// Implements a promotion move. ... " />
+            <marker date="1549604061169" expanded="true" signature="292:4071" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="307:383" ph="/// The piece pawn promotes to. ... " />
+            <marker date="1549604061169" expanded="true" signature="431:507" ph="/// The pawn which is promoted. ... " />
+            <marker date="1549604061169" expanded="true" signature="555:739" ph="/// The piece type pawn promotes to. ... " />
+            <marker date="1549604061169" expanded="true" signature="775:2126" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="848:2116" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="897:1054" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="1820:1933" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="1954:2102" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="2136:2259" ph="/// Sets the captured piece. ... " />
+            <marker date="1549604061169" expanded="true" signature="2305:2354" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="2366:2600" ph="/// Constructor. ... " />
+            <marker date="1549604061169" expanded="true" signature="2706:2726" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="2736:2995" ph="/// Makes the move, it doesn't check if it's a valid move. ... " />
+            <marker date="1549604061169" expanded="true" signature="3044:3597" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="3095:3209" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="3226:3376" ph="{...}" />
+            <marker date="1549604061169" expanded="true" signature="3607:3765" ph="/// Takes back the move, it doesn't check if it's a valid move. ... " />
+            <marker date="1549604061169" expanded="true" signature="3818:4065" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/MoveEvents.cs" />
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Piece.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <marker date="1549604143060" expanded="false" signature="6:146" ph="..." />
+            <marker date="1549604143060" expanded="true" signature="183:3787" ph="{...}" />
+            <marker date="1549604143060" expanded="true" signature="190:255" ph="/// Implements a chess piece ... " />
+            <marker date="1549604143060" expanded="true" signature="296:3785" ph="{...}" />
+            <marker date="1549604143060" expanded="true" signature="311:762" ph="/// Checks if the piece might move on this &quot;board&quot;,  ... " />
+            <marker date="1549604143060" expanded="true" signature="846:1176" ph="/// Verifies if the piece attacks the &quot;to&quot; square, on this board, from the &quot;from&quot; square. ... " />
+            <marker date="1549604143060" expanded="true" signature="1243:1366" ph="{...}" />
+            <marker date="1549604143060" expanded="true" signature="1376:1804" ph="/// Generates the move. ... " />
+            <marker date="1549604143060" expanded="true" signature="1878:3552" ph="{...}" />
+            <marker date="1549604143060" expanded="true" signature="2203:2289" ph="{...}" />
+            <marker date="1549604143060" expanded="true" signature="2330:3516" ph="{...}" />
+            <marker date="1549604143060" expanded="true" signature="2430:3502" ph="{...}" />
+            <marker date="1549604143060" expanded="true" signature="2469:2632" ph="/* if there this moves captures a rook ... */" />
+            <marker date="1549604143060" expanded="true" signature="2886:3004" ph="{...}" />
+            <marker date="1549604143060" expanded="true" signature="3312:3430" ph="{...}" />
+            <marker date="1549604143060" expanded="true" signature="3709:3779" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Move.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="149" column="52" selection-start-line="149" selection-start-column="52" selection-end-line="149" selection-end-column="52" />
+          <folding>
+            <marker date="1549604466387" expanded="true" signature="35:5018" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="42:101" ph="/// Implements a move. ... " />
+            <marker date="1549604466387" expanded="true" signature="123:5016" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="138:228" ph="/// The board status before the move is made. ... " />
+            <marker date="1549604466387" expanded="true" signature="275:364" ph="/// The board status after the move is made. ... " />
+            <marker date="1549604466387" expanded="true" signature="410:479" ph="/// The starting square. ... " />
+            <marker date="1549604466387" expanded="true" signature="525:592" ph="/// The ending square. ... " />
+            <marker date="1549604466387" expanded="true" signature="645:713" ph="/// The captured piece. ... " />
+            <marker date="1549604466387" expanded="true" signature="756:846" ph="/// The board status before the move is made. ... " />
+            <marker date="1549604466387" expanded="true" signature="901:990" ph="/// The board status after the move is made. ... " />
+            <marker date="1549604466387" expanded="true" signature="1043:1112" ph="/// The starting square. ... " />
+            <marker date="1549604466387" expanded="true" signature="1155:1222" ph="/// The ending square. ... " />
+            <marker date="1549604466387" expanded="true" signature="1261:1327" ph="/// Gets the capture. ... " />
+            <marker date="1549604466387" expanded="true" signature="1381:1482" ph="/// Returns true if there is a capture, false otherwise. ... " />
+            <marker date="1549604466387" expanded="true" signature="1543:1777" ph="/// Constructor. ... " />
+            <marker date="1549604466387" expanded="true" signature="1837:2038" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="2048:2201" ph="/// Makes the move, it doesn't check if it's a valid move. ... " />
+            <marker date="1549604466387" expanded="true" signature="2249:2533" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="2543:2701" ph="/// Takes back the move, it doesn't check if it's a valid move. ... " />
+            <marker date="1549604466387" expanded="true" signature="2753:2987" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="2997:3094" ph="/// Changes side to move for the after board status. ... " />
+            <marker date="1549604466387" expanded="true" signature="3135:3202" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="3212:3307" ph="/// Increments the ply for the after board status. ... " />
+            <marker date="1549604466387" expanded="true" signature="3344:3389" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="3399:3490" ph="/// Resets the ply for the after board status. ... " />
+            <marker date="1549604466387" expanded="true" signature="3523:3570" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="3580:3677" ph="/// Increments the moves for the after board status. ... " />
+            <marker date="1549604466387" expanded="true" signature="3716:3763" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="3773:3914" ph="/// Sets the en passant target for the after board status. ... " />
+            <marker date="1549604466387" expanded="true" signature="3964:4024" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="4034:4149" ph="/// Makes white short castling unavailable for the after board status. ... " />
+            <marker date="1549604466387" expanded="true" signature="4203:4272" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="4282:4396" ph="/// Makes white long castling unavailable for the after board status. ... " />
+            <marker date="1549604466387" expanded="true" signature="4449:4517" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="4527:4642" ph="/// Makes black short castling unavailable for the after board status. ... " />
+            <marker date="1549604466387" expanded="true" signature="4696:4765" ph="{...}" />
+            <marker date="1549604466387" expanded="true" signature="4775:4889" ph="/// Makes black long castling unavailable for the after board status. ... " />
+            <marker date="1549604466387" expanded="true" signature="4942:5010" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Board.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="60" />
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
           <folding>
-            <marker date="1538627603058" expanded="true" signature="6:147" ph="..." />
-            <marker date="1538627603058" expanded="true" signature="181:765" ph="{...}" />
-            <marker date="1538627603058" expanded="true" signature="223:763" ph="{...}" />
-            <marker date="1538627603058" expanded="true" signature="238:432" ph="/// Returns the available pieces ... " />
-            <marker date="1538627603058" expanded="true" signature="530:757" ph="{...}" />
+            <marker date="1549604999631" expanded="false" signature="6:149" ph="..." />
+            <marker date="1549604999631" expanded="true" signature="186:14995" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="193:258" ph="/// Implements a chessboard. ... " />
+            <marker date="1549604999631" expanded="true" signature="281:13555" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="296:385" ph="/// The number of squares on the board side. ... " />
+            <marker date="1549604999631" expanded="true" signature="446:517" ph="/// The number of squares. ... " />
+            <marker date="1549604999631" expanded="false" signature="592:2411" ph="Frequently used squares" />
+            <marker date="1549604999631" expanded="true" signature="632:700" ph="/// A1 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="743:811" ph="/// B1 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="854:922" ph="/// C1 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="965:1033" ph="/// D1 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="1076:1144" ph="/// E1 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="1187:1255" ph="/// F1 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="1298:1366" ph="/// G1 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="1409:1477" ph="/// H1 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="1521:1589" ph="/// A8 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="1631:1699" ph="/// B8 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="1741:1809" ph="/// C8 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="1851:1919" ph="/// D8 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="1961:2029" ph="/// E8 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="2071:2139" ph="/// F8 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="2181:2249" ph="/// G8 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="2291:2359" ph="/// H8 square position. ... " />
+            <marker date="1549604999631" expanded="true" signature="2421:2525" ph="/// Array of 64 squares, from left to right, top to bottom. ... " />
+            <marker date="1549604999631" expanded="true" signature="2577:2639" ph="/// Board status. ... " />
+            <marker date="1549604999631" expanded="true" signature="2686:2805" ph="/// Gets a board in the starting position. ... " />
+            <marker date="1549604999631" expanded="true" signature="2852:4366" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="3392:3472" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="3595:3675" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="4376:4524" ph="/// Returns true if the board is in starting position, false otherwise. ... " />
+            <marker date="1549604999631" expanded="true" signature="4567:6579" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="5002:5060" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="5145:5246" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="5356:5449" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="5572:5673" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="6099:6157" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="6485:6543" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="6589:6662" ph="/// Indexer for the squares. ... " />
+            <marker date="1549604999631" expanded="true" signature="6699:6808" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="6818:6880" ph="/// Board status. ... " />
+            <marker date="1549604999631" expanded="true" signature="6914:7007" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="7017:7163" ph="/// Constructor. ... " />
+            <marker date="1549604999631" expanded="true" signature="7221:7303" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="7313:7689" ph="/// Checks if the squares from &quot;from&quot; square to &quot;to&quot; square are empty, excluding the starting and ending square. ... " />
+            <marker date="1549604999631" expanded="true" signature="7739:8355" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="8099:8320" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="8173:8243" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="8365:8547" ph="/// Checks if a square is attacked by White side. ... " />
+            <marker date="1549604999631" expanded="true" signature="8599:9101" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="8653:8794" ph="/* loop through all the board squares ... */" />
+            <marker date="1549604999631" expanded="true" signature="8859:9064" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="8981:9050" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="9111:9293" ph="/// Checks if a square is attacked by Black side. ... " />
+            <marker date="1549604999631" expanded="true" signature="9345:9847" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="9399:9540" ph="/* loop through all the board squares ... */" />
+            <marker date="1549604999631" expanded="true" signature="9605:9810" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="9727:9796" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="9857:9977" ph="/// Verifies if the White King is in check. ... " />
+            <marker date="1549604999631" expanded="true" signature="10016:10386" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="10039:10166" ph="/* loop through the squares to find the White King ... */" />
+            <marker date="1549604999631" expanded="true" signature="10231:10350" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="10396:10516" ph="/// Verifies if the Black King is in check. ... " />
+            <marker date="1549604999631" expanded="true" signature="10555:10925" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="10578:10705" ph="/* loop through the squares to find the Black King ... */" />
+            <marker date="1549604999631" expanded="true" signature="10770:10889" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="10935:11127" ph="/// Checks if a square is occupied by a side to move piece. ... " />
+            <marker date="1549604999631" expanded="true" signature="11179:11366" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="11376:11596" ph="/// Gets the rank of this square. ... " />
+            <marker date="1549604999631" expanded="true" signature="11641:11705" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="11715:11935" ph="/// Gets the file of this square. ... " />
+            <marker date="1549604999631" expanded="true" signature="11980:12044" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="12054:12293" ph="/// Gets a square position, given its rank and file. ... " />
+            <marker date="1549604999631" expanded="true" signature="12348:12417" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="12427:12594" ph="/// Checks if the square is white. ... " />
+            <marker date="1549604999631" expanded="true" signature="12649:12734" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="12744:12912" ph="/// Gets the hash code of this board. ... " />
+            <marker date="1549604999631" expanded="true" signature="12954:13549" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="13096:13513" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="13199:13499" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="13238:13414" ph="/* XOR the Zobrist key which coresponds to type of piece and for this square ... */" />
+            <marker date="1549604999631" expanded="true" signature="13561:13630" ph="/// Implements the board status. ... " />
+            <marker date="1549604999631" expanded="true" signature="13660:14993" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="13675:13766" ph="/// True if white is to move, false otherwise. ... " />
+            <marker date="1549604999631" expanded="true" signature="13820:13911" ph="/// True if black is to move, false otherwise. ... " />
+            <marker date="1549604999631" expanded="true" signature="13941:14031" ph="{...}" />
+            <marker date="1549604999631" expanded="true" signature="14041:14124" ph="/// White short castling availability. ... " />
+            <marker date="1549604999631" expanded="true" signature="14190:14271" ph="/// White long astling availability. ... " />
+            <marker date="1549604999631" expanded="true" signature="14336:14419" ph="/// Black short castling availability. ... " />
+            <marker date="1549604999631" expanded="true" signature="14485:14567" ph="/// Black long castling availability. ... " />
+            <marker date="1549604999631" expanded="true" signature="14632:14719" ph="/// The position of the en passant target. ... " />
+            <marker date="1549604999631" expanded="true" signature="14779:14836" ph="/// The ply. ... " />
+            <marker date="1549604999631" expanded="true" signature="14883:14948" ph="/// The move number. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/ChessEngine.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Events/MoveEventArgs.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <marker date="1549605786269" expanded="true" signature="6:46" ph="..." />
+            <marker date="1549605786269" expanded="true" signature="83:688" ph="{...}" />
+            <marker date="1549605786269" expanded="true" signature="90:147" ph="/// Move event args. ... " />
+            <marker date="1549605786269" expanded="true" signature="190:686" ph="{...}" />
+            <marker date="1549605786269" expanded="true" signature="205:263" ph="/// The move. ... " />
+            <marker date="1549605786269" expanded="true" signature="307:371" ph="/// The move index. ... " />
+            <marker date="1549605786269" expanded="true" signature="415:557" ph="/// Constructor. ... " />
+            <marker date="1549605786269" expanded="true" signature="608:680" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Events/CancelMoveEventArgs.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1549605917271" expanded="true" signature="69:615" ph="{...}" />
+            <marker date="1549605917271" expanded="true" signature="76:140" ph="/// Cancel move event args. ... " />
+            <marker date="1549605917271" expanded="true" signature="193:613" ph="{...}" />
+            <marker date="1549605917271" expanded="true" signature="208:305" ph="/// Indicates whether the event should be cancelled. ... " />
+            <marker date="1549605917271" expanded="true" signature="356:498" ph="/// Constructor. ... " />
+            <marker date="1549605917271" expanded="true" signature="587:607" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/OpponentsSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/OpponentsSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding>
+            <marker date="1549606631198" expanded="true" signature="38:98" ph="{...}" />
+            <marker date="1549606631198" expanded="true" signature="75:96" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Valil.Chess.WinFX/Valil.Chess.Opponents/HumanVsWebService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Game.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2219">
+          <caret line="422" column="30" selection-start-line="422" selection-start-column="30" selection-end-line="422" selection-end-column="30" />
+          <folding>
+            <marker date="1549606548984" expanded="false" signature="6:296" ph="..." />
+            <marker date="1549606548984" expanded="true" signature="326:25052" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="333:398" ph="/// Implements a chess game. ... " />
+            <marker date="1549606548984" expanded="true" signature="420:24746" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="435:504" ph="/// Mean history length. ... " />
+            <marker date="1549606548984" expanded="true" signature="571:650" ph="/// Maximum possible moves number. ... " />
+            <marker date="1549606548984" expanded="true" signature="708:785" ph="/// Current board configuration. ... " />
+            <marker date="1549606548984" expanded="true" signature="839:908" ph="/// Current board index. ... " />
+            <marker date="1549606548984" expanded="true" signature="965:1027" ph="/// Move history. ... " />
+            <marker date="1549606548984" expanded="true" signature="1086:1154" ph="/// Status of the game. ... " />
+            <marker date="1549606548984" expanded="true" signature="1208:1305" ph="/// List of the possible moves of the current board. ... " />
+            <marker date="1549606548984" expanded="true" signature="1366:1516" ph="/// Contains pairs consisting of a board hash and the frequency of that board in the history of the game. ... " />
+            <marker date="1549606548984" expanded="true" signature="1579:1641" ph="/// Moving event. ... " />
+            <marker date="1549606548984" expanded="true" signature="1713:1774" ph="/// Moved event. ... " />
+            <marker date="1549606548984" expanded="true" signature="1839:1908" ph="/// Going forward event. ... " />
+            <marker date="1549606548984" expanded="true" signature="1986:2054" ph="/// Gone forward event. ... " />
+            <marker date="1549606548984" expanded="true" signature="2125:2191" ph="/// Going back event. ... " />
+            <marker date="1549606548984" expanded="true" signature="2266:2331" ph="/// Gone back event. ... " />
+            <marker date="1549606548984" expanded="true" signature="2399:2464" ph="/// Modifying event. ... " />
+            <marker date="1549606548984" expanded="true" signature="2535:2599" ph="/// Modified event. ... " />
+            <marker date="1549606548984" expanded="true" signature="2652:2715" ph="/// Loading event. ... " />
+            <marker date="1549606548984" expanded="true" signature="2784:2866" ph="/// Board configuration loaded event. ... " />
+            <marker date="1549606548984" expanded="true" signature="2935:3022" ph="/// Game board configuration loaded event. ... " />
+            <marker date="1549606548984" expanded="true" signature="3095:3175" ph="/// Game move section loaded event. ... " />
+            <marker date="1549606548984" expanded="true" signature="3242:3352" ph="/// Raises the Moving event. ... " />
+            <marker date="1549606548984" expanded="true" signature="3415:3472" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="3481:3590" ph="/// Raises the Moved event. ... " />
+            <marker date="1549606548984" expanded="true" signature="3646:3702" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="3711:3827" ph="/// Raises the GoingForward event. ... " />
+            <marker date="1549606548984" expanded="true" signature="3896:3959" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="3968:4083" ph="/// Raises the GoneForward event. ... " />
+            <marker date="1549606548984" expanded="true" signature="4145:4207" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="4216:4329" ph="/// Raises the GoingBack event. ... " />
+            <marker date="1549606548984" expanded="true" signature="4395:4455" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="4464:4576" ph="/// Raises the GoneBack event. ... " />
+            <marker date="1549606548984" expanded="true" signature="4635:4694" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="4704:4817" ph="/// Raises the Modifying event. ... " />
+            <marker date="1549606548984" expanded="true" signature="4879:4939" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="4948:5060" ph="/// Raises the Modified event. ... " />
+            <marker date="1549606548984" expanded="true" signature="5115:5174" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="5184:5295" ph="/// Raises the Loading event. ... " />
+            <marker date="1549606548984" expanded="true" signature="5364:5422" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="5440:5568" ph="/// Raises the BoardConfigurationLoaded event. ... " />
+            <marker date="1549606548984" expanded="true" signature="5648:5723" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="5741:5873" ph="/// Raises the GameBoardConfigurationLoaded event. ... " />
+            <marker date="1549606548984" expanded="true" signature="5957:6036" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="6054:6179" ph="/// Raises the GameMoveSectionLoaded event. ... " />
+            <marker date="1549606548984" expanded="true" signature="6256:6328" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="6338:6406" ph="/// Promotion delegate. ... " />
+            <marker date="1549606548984" expanded="true" signature="6470:6599" ph="/// True if the current board configuration is the last in history, false otherwise. ... " />
+            <marker date="1549606548984" expanded="true" signature="6680:6810" ph="/// True if the current board configuration is the first in history, false otherwise. ... " />
+            <marker date="1549606548984" expanded="true" signature="6875:6967" ph="/// True if the game is ended, false otherwise. ... " />
+            <marker date="1549606548984" expanded="true" signature="7069:7167" ph="/// True if the game is initialized, false otherwise. ... " />
+            <marker date="1549606548984" expanded="true" signature="7236:7330" ph="/// Gets or sets the current board configuration. ... " />
+            <marker date="1549606548984" expanded="true" signature="7364:7723" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="7432:7713" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="7733:7814" ph="/// Gets the list of possible moves. ... " />
+            <marker date="1549606548984" expanded="true" signature="7886:7956" ph="/// Gets the game status. ... " />
+            <marker date="1549606548984" expanded="true" signature="8011:8072" ph="/// Constructor. ... " />
+            <marker date="1549606548984" expanded="true" signature="8094:8313" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="8323:8729" ph="/// Gets the valid move based on starting square and ending square.  ... " />
+            <marker date="1549606548984" expanded="true" signature="8795:9323" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="8959:9287" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="9029:9273" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="9108:9221" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="9333:9501" ph="/// Gets a move which if it is made, it will probably end the game in a draw by repetition. ... " />
+            <marker date="1549606548984" expanded="true" signature="10351:10545" ph="/// Makes a move. ... " />
+            <marker date="1549606548984" expanded="true" signature="10581:12484" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="10808:10996" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="10882:10982" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="11458:11587" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="11827:11922" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="12494:12589" ph="/// Go to the next board configuration in history. ... " />
+            <marker date="1549606548984" expanded="true" signature="12616:13692" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="12700:13682" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="13702:13801" ph="/// Go to the previous board configuration in history. ... " />
+            <marker date="1549606548984" expanded="true" signature="13832:14903" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="13918:14893" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="14913:15008" ph="/// Go to the last board configuration in history. ... " />
+            <marker date="1549606548984" expanded="true" signature="15039:15901" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="15398:15809" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="15911:16007" ph="/// Go to the first board configuration in history. ... " />
+            <marker date="1549606548984" expanded="true" signature="16039:16912" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="16400:16820" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="16922:17021" ph="/// Generates the possible moves of the current board. ... " />
+            <marker date="1549606548984" expanded="true" signature="17058:17904" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="17278:17894" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="17418:17880" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="17587:17862" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="17914:17983" ph="/// Set the game status. ... " />
+            <marker date="1549606548984" expanded="true" signature="18016:19004" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="18134:18269" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="18369:18484" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="18577:18678" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="18770:18875" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="19014:19102" ph="/// Adds the current board hash to history. ... " />
+            <marker date="1549606548984" expanded="true" signature="19140:19411" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="19421:19514" ph="/// Removes the current board hash from history. ... " />
+            <marker date="1549606548984" expanded="true" signature="19555:19952" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="19775:19852" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="19869:19942" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="19962:20136" ph="/// Gets the captured pieces. ... " />
+            <marker date="1549606548984" expanded="true" signature="20193:20917" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="20463:20877" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="20927:21045" ph="/// Verifies the current board for check. ... " />
+            <marker date="1549606548984" expanded="true" signature="21076:21214" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="21224:21366" ph="/// Verifies the current board for draw by insufficient material. ... " />
+            <marker date="1549606548984" expanded="true" signature="21416:24740" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="21439:21788" ph="/* &quot;N&quot; is true if there is one White Knight ... */" />
+            <marker date="1549606548984" expanded="true" signature="21982:23955" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="22047:23941" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="22127:22398" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="22461:22853" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="22916:23187" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="23250:23643" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="24037:24094" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="24229:24286" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="24421:24478" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="24646:24703" ph="{...}" />
+            <marker date="1549606548984" expanded="true" signature="24752:24817" ph="/// Game status enumeration. ... " />
+            <marker date="1549606548984" expanded="true" signature="24945:25005" ph="/// Promotion delegate. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine.Tests/UnitTest1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <marker date="1549608531843" expanded="true" signature="6:52" ph="..." />
+            <marker date="1549608531843" expanded="true" signature="81:188" ph="{...}" />
+            <marker date="1549608531843" expanded="true" signature="110:186" ph="{...}" />
+            <marker date="1549608531843" expanded="true" signature="159:180" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/OpponentsInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1136">
+          <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+          <folding>
+            <marker date="1549608297573" expanded="true" signature="6:54" ph="..." />
+            <marker date="1549608297573" expanded="true" signature="83:5620" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="90:175" ph="/// Stores information about the game opponents. ... " />
+            <marker date="1549608297573" expanded="true" signature="242:5617" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="257:316" ph="/// The model. ... " />
+            <marker date="1549608297573" expanded="true" signature="354:417" ph="/// The opponents. ... " />
+            <marker date="1549608297573" expanded="true" signature="465:538" ph="/// The opponents info text. ... " />
+            <marker date="1549608297573" expanded="true" signature="590:649" ph="/// The model. ... " />
+            <marker date="1549608297573" expanded="true" signature="675:984" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="727:974" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="843:960" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="994:1095" ph="/// The opponents info text. ... " />
+            <marker date="1549608297573" expanded="true" signature="1135:1436" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="1207:1426" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="1269:1412" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="1446:1518" ph="/// Property changed event. ... " />
+            <marker date="1549608297573" expanded="true" signature="1594:1721" ph="/// Raises property changed event. ... " />
+            <marker date="1549608297573" expanded="true" signature="1781:1888" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="1898:1959" ph="/// Constructor. ... " />
+            <marker date="1549608297573" expanded="true" signature="1990:2536" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="2091:2167" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="2234:2315" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="2546:2700" ph="/// Constructor. ... " />
+            <marker date="1549608297573" expanded="true" signature="2772:2825" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="2907:4226" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="3103:3484" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="3630:4016" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="4079:4216" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="4236:4314" ph="/// Sets the opponents info text. ... " />
+            <marker date="1549608297573" expanded="true" signature="4358:4796" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="4426:4519" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="4586:4786" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="4806:4929" ph="/// Force the opponent engine to move, if the game is not in two-players mode. ... " />
+            <marker date="1549608297573" expanded="true" signature="4963:5067" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="5077:5168" ph="/// True if it's engine turn, false otherwise. ... " />
+            <marker date="1549608297573" expanded="true" signature="5195:5356" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="5221:5346" ph="{...}" />
+            <marker date="1549608297573" expanded="true" signature="5366:5437" ph="/// Release the resources. ... " />
+            <marker date="1549608297573" expanded="true" signature="5493:5611" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-410">
+          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+          <folding>
+            <marker date="1549608361107" expanded="false" signature="6:234" ph="..." />
+            <marker date="1549608361107" expanded="true" signature="263:8256" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="270:352" ph="/// A human player playing against an engine. ... " />
+            <marker date="1549608361107" expanded="true" signature="381:7961" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="396:455" ph="/// The model. ... " />
+            <marker date="1549608361107" expanded="true" signature="495:631" ph="/// True if the game is in navigational mode (using next/prev/first/last), false otherwise. ... " />
+            <marker date="1549608361107" expanded="true" signature="671:742" ph="/// The background worker. ... " />
+            <marker date="1549608361107" expanded="true" signature="801:900" ph="/// True to if the model loads moves, false otherwise. ... " />
+            <marker date="1549608361107" expanded="true" signature="952:1043" ph="/// True if it's engine turn, false otherwise. ... " />
+            <marker date="1549608361107" expanded="true" signature="1266:1547" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="1557:1646" ph="/// Force engine to start thinking and move. ... " />
+            <marker date="1549608361107" expanded="true" signature="1682:2238" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="1891:2228" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="2248:2320" ph="/// Aborts engine thinking. ... " />
+            <marker date="1549608361107" expanded="true" signature="2377:2532" ph="/// Starts the engine thinking. ... " />
+            <marker date="1549608361107" expanded="true" signature="2629:2831" ph="/// Called when the engine ended thinking. ... " />
+            <marker date="1549608361107" expanded="true" signature="2930:3860" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="2956:3349" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="3077:3335" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="3391:3610" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="3643:3850" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="3870:3970" ph="/// Gets or sets the model. ... " />
+            <marker date="1549608361107" expanded="true" signature="3996:4822" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="4048:4812" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="4164:4798" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="4888:5541" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="5058:5237" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="5346:5531" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="5610:5762" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="5827:5979" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="6060:6144" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="6229:6402" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="6480:6590" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="6600:6736" ph="/// Gets the engine input parameters from the current game. ... " />
+            <marker date="1549608361107" expanded="true" signature="6797:7272" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="6919:6997" ph="/* set the current board FEN ... */" />
+            <marker date="1549608361107" expanded="true" signature="7282:7360" ph="/// Dispose the engine resources. ... " />
+            <marker date="1549608361107" expanded="true" signature="7398:7955" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="7472:7945" ph="{...}" />
+            <marker date="1549608361107" expanded="true" signature="7967:8057" ph="/// Helper class, stores the engine input parameters. ... " />
+            <marker date="1549608361107" expanded="true" signature="8096:8254" ph="{...}" />
           </folding>
         </state>
       </provider>

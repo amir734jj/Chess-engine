@@ -2,6 +2,6 @@ namespace ChessEngine.Models.Constants
 {
     public static class BoardConstants
     {
-        public static int Dimension = 8;
+        public const int Dimension = 8;
     }
 }

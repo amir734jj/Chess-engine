@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/HES8493/RiderProjects/ChessEngine/ChessEngine/ChessEngine.csproj",
+    "projectUniqueName": "/Users/HES8493/RiderProjects/Chess-engine/ChessEngine/ChessEngine.csproj",
     "projectName": "ChessEngine",
-    "projectPath": "/Users/HES8493/RiderProjects/ChessEngine/ChessEngine/ChessEngine.csproj",
-    "outputPath": "/Users/HES8493/RiderProjects/ChessEngine/ChessEngine/obj/",
+    "projectPath": "/Users/HES8493/RiderProjects/Chess-engine/ChessEngine/ChessEngine.csproj",
+    "outputPath": "/Users/HES8493/RiderProjects/Chess-engine/ChessEngine/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
