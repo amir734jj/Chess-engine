@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
+using ChessEngine.Interfaces;
 using ChessEngine.Models.Events;
 using ChessEngine.Models.Interfaces;
 using ChessEngine.Models.Pieces;
@@ -8,37 +10,37 @@ using ChessEngine.Models.Pieces.Black;
 using ChessEngine.Models.Pieces.Moves;
 using ChessEngine.Models.Pieces.White;
 
-namespace ChessEngine.Models
+namespace ChessEngine.Logic
 {
     /// <summary>
     /// Implements a chess game.
     /// </summary>
-    public class Game
+    public class Game : IGame
     {
         /// <summary>
         /// Mean history length.
         /// </summary>
-        public const int MeanHistoryLength = 50;
+        private const int MeanHistoryLength = 50;
         
         /// <summary>
         /// Maximum possible moves number.
         /// </summary>
-        public const int MaxPossibleMoves = 50;
+        private const int MaxPossibleMoves = 50;
 
         /// <summary>
         /// Current board configuration.
         /// </summary>
-        private Board currentBoard;
+        private Board _currentBoard;
         
         /// <summary>
         /// Current board index.
         /// </summary>
-        private int currentBoardIndex;
+        private int _currentBoardIndex;
         
         /// <summary>
         /// Move history.
         /// </summary>
-        private List<Move> _moveHistory;
+        private readonly List<Move> _moveHistory;
         
         /// <summary>
         /// Status of the game.
@@ -48,12 +50,12 @@ namespace ChessEngine.Models
         /// <summary>
         /// List of the possible moves of the current board.
         /// </summary>
-        private List<Move> _possibleMoves;
+        private readonly List<Move> _possibleMoves;
         
         /// <summary>
         /// Contains pairs consisting of a board hash and the frequency of that board in the history of the game.
         /// </summary>
-        private Dictionary<int, int> _historyHashes;
+        private readonly Dictionary<int, int> _historyHashes;
 
         /// <summary>
         /// Moving event.
@@ -214,12 +216,12 @@ namespace ChessEngine.Models
         /// <summary>
         /// True if the current board configuration is the last in history, false otherwise.
         /// </summary>
-        public bool IsLast => currentBoardIndex == _moveHistory.Count;
+        public bool IsLast => _currentBoardIndex == _moveHistory.Count;
 
         /// <summary>
         /// True if the current board configuration is the first in history, false otherwise.
         /// </summary>
-        public bool IsFirst => currentBoardIndex == 0;
+        public bool IsFirst => _currentBoardIndex == 0;
 
         /// <summary>
         /// True if the game is ended, false otherwise.
@@ -229,21 +231,21 @@ namespace ChessEngine.Models
         /// <summary>
         /// True if the game is initialized, false otherwise.
         /// </summary>
-        public bool IsInitialized => currentBoard != null;
+        public bool IsInitialized => _currentBoard != null;
 
         /// <summary>
         /// Gets or sets the current board configuration.
         /// </summary>
         public Board CurrentBoard
         {
-            get => currentBoard;
+            get => _currentBoard;
             internal set
             {
                 _moveHistory.Clear();
                 _historyHashes.Clear();
 
-                currentBoard = value;
-                currentBoardIndex = 0;
+                _currentBoard = value;
+                _currentBoardIndex = 0;
 
                 GenerateMoves();
                 AddHistoryHash();
@@ -254,7 +256,7 @@ namespace ChessEngine.Models
         /// <summary>
         /// Gets the list of possible moves.
         /// </summary>
-        protected List<Move> PossibleMoves => _possibleMoves;
+        private IEnumerable<Move> PossibleMoves => _possibleMoves;
 
         /// <summary>
         /// Gets the game status.
@@ -303,15 +305,15 @@ namespace ChessEngine.Models
         /// </summary>
         /// <returns></returns>
         public Move RepetitiveMoveCandidate =>
-            currentBoardIndex >= 7 &&
-            _moveHistory[currentBoardIndex - 1].From == _moveHistory[currentBoardIndex - 5].From &&
-            _moveHistory[currentBoardIndex - 1].To == _moveHistory[currentBoardIndex - 5].To &&
-            _moveHistory[currentBoardIndex - 2].From == _moveHistory[currentBoardIndex - 6].From &&
-            _moveHistory[currentBoardIndex - 2].To == _moveHistory[currentBoardIndex - 6].To &&
-            _moveHistory[currentBoardIndex - 3].From == _moveHistory[currentBoardIndex - 7].From &&
-            _moveHistory[currentBoardIndex - 3].To == _moveHistory[currentBoardIndex - 7].To
+            _currentBoardIndex >= 7 &&
+            _moveHistory[_currentBoardIndex - 1].From == _moveHistory[_currentBoardIndex - 5].From &&
+            _moveHistory[_currentBoardIndex - 1].To == _moveHistory[_currentBoardIndex - 5].To &&
+            _moveHistory[_currentBoardIndex - 2].From == _moveHistory[_currentBoardIndex - 6].From &&
+            _moveHistory[_currentBoardIndex - 2].To == _moveHistory[_currentBoardIndex - 6].To &&
+            _moveHistory[_currentBoardIndex - 3].From == _moveHistory[_currentBoardIndex - 7].From &&
+            _moveHistory[_currentBoardIndex - 3].To == _moveHistory[_currentBoardIndex - 7].To
                 ?
-                GetMove(_moveHistory[currentBoardIndex - 4].From, _moveHistory[currentBoardIndex - 4].To, null)
+                GetMove(_moveHistory[_currentBoardIndex - 4].From, _moveHistory[_currentBoardIndex - 4].To, null)
                 :
                 null;
 
@@ -324,19 +326,11 @@ namespace ChessEngine.Models
         {
             // check to see if the move it's not null and it's valid
             if (move == null) { throw new ArgumentNullException(); }
-            var findMove = false;
-            foreach (var m in PossibleMoves)
-            {
-                if (move.From == m.From && move.To == m.To)
-                {
-                    findMove = true;
-                    break;
-                }
-            }
+            var findMove = PossibleMoves.Any(m => move.From == m.From && move.To == m.To);
             if (!findMove) { throw new ArgumentException(); }
 
             // build the event args
-            CancelMoveEventArgs moveEventArgs = new CancelMoveEventArgs(move, currentBoardIndex - 1);
+            var moveEventArgs = new CancelMoveEventArgs(move, _currentBoardIndex - 1);
 
             // raise the Moving event
             OnMoving(moveEventArgs);
@@ -347,17 +341,17 @@ namespace ChessEngine.Models
             // remove the moves after current board index (if any)
             if (!IsLast)
             {
-                _moveHistory.RemoveRange(currentBoardIndex, _moveHistory.Count - currentBoardIndex);
+                _moveHistory.RemoveRange(_currentBoardIndex, _moveHistory.Count - _currentBoardIndex);
             }
 
             // if this is a promotion, the promotion is not set and the promotion delegate is not null, call the promotion delegate
-            if (move is PromotionMove && (move as PromotionMove).PromotionType == null && Promote != null)
+            if (move is PromotionMove promotionMove && promotionMove.PromotionType == null && Promote != null)
             {
-                (move as PromotionMove).PromotionType = Promote();
+                promotionMove.PromotionType = Promote();
             }
 
             // make the move
-            move.Make(currentBoard);
+            move.Make(_currentBoard);
 
             // add the current hash to the history
             AddHistoryHash();
@@ -369,13 +363,13 @@ namespace ChessEngine.Models
             SetStatus();
 
             // increment the current board index
-            currentBoardIndex++;
+            _currentBoardIndex++;
 
             // add move to history
             _moveHistory.Add(move);
 
             // raise the Moved event
-            OnMoved(new MoveEventArgs(move, currentBoardIndex - 1));
+            OnMoved(new MoveEventArgs(move, _currentBoardIndex - 1));
         }
 
         /// <summary>
@@ -386,10 +380,10 @@ namespace ChessEngine.Models
             // if the game is not the at the end
             if (!IsLast)
             {
-                var move = _moveHistory[currentBoardIndex];
+                var move = _moveHistory[_currentBoardIndex];
 
                 // build the event args
-                CancelMoveEventArgs moveEventArgs = new CancelMoveEventArgs(move, currentBoardIndex - 1);
+                CancelMoveEventArgs moveEventArgs = new CancelMoveEventArgs(move, _currentBoardIndex - 1);
 
                 // raise the GoingForward event
                 OnGoingForward(moveEventArgs);
@@ -398,7 +392,7 @@ namespace ChessEngine.Models
                 if (moveEventArgs.Cancel) { return; }
 
                 // make the move
-                move.Make(currentBoard);
+                move.Make(_currentBoard);
 
                 // add the current board hash to the history
                 AddHistoryHash();
@@ -410,10 +404,10 @@ namespace ChessEngine.Models
                 SetStatus();
 
                 // increment the current board index
-                currentBoardIndex++;
+                _currentBoardIndex++;
 
                 // raise the GoneForward event
-                OnGoneForward(new MoveEventArgs(move, currentBoardIndex - 1));
+                OnGoneForward(new MoveEventArgs(move, _currentBoardIndex - 1));
             }
         }
 
@@ -425,10 +419,10 @@ namespace ChessEngine.Models
             // if the game is not at the begining
             if (!IsFirst)
             {
-                var move = _moveHistory[currentBoardIndex - 1];
+                var move = _moveHistory[_currentBoardIndex - 1];
 
                 // build the event args
-                var moveEventArgs = new CancelMoveEventArgs(move, currentBoardIndex - 1);
+                var moveEventArgs = new CancelMoveEventArgs(move, _currentBoardIndex - 1);
 
                 // raise the GoingBack event
                 OnGoingBack(moveEventArgs);
@@ -440,7 +434,7 @@ namespace ChessEngine.Models
                 RemoveHistoryHash();
 
                 // take back the move
-                move.TakeBack(currentBoard);
+                move.TakeBack(_currentBoard);
 
                 // generate the possible moves
                 GenerateMoves();
@@ -449,10 +443,10 @@ namespace ChessEngine.Models
                 SetStatus();
 
                 // decrement the current board index
-                currentBoardIndex--;
+                _currentBoardIndex--;
 
                 // raise the GoneBack event
-                OnGoneBack(new MoveEventArgs(move, currentBoardIndex - 1));
+                OnGoneBack(new MoveEventArgs(move, _currentBoardIndex - 1));
             }
         }
 
@@ -474,7 +468,7 @@ namespace ChessEngine.Models
             while (!IsLast)
             {
                 // make the move and increment the current board index
-                _moveHistory[currentBoardIndex++].Make(currentBoard);
+                _moveHistory[_currentBoardIndex++].Make(_currentBoard);
 
                 // add the current board hash to history
                 AddHistoryHash();
@@ -511,7 +505,7 @@ namespace ChessEngine.Models
                 RemoveHistoryHash();
 
                 // take back the move and decrement the current board index
-                _moveHistory[--currentBoardIndex].TakeBack(currentBoard);
+                _moveHistory[--_currentBoardIndex].TakeBack(_currentBoard);
 
                 // generate the possible moves
                 GenerateMoves();
@@ -536,13 +530,13 @@ namespace ChessEngine.Models
             for (var fromIndex = 0; fromIndex < Board.SquareNo; fromIndex++)
             {
                 // if it's a side to move piece on this square
-                if (currentBoard.IsSideToMovePiece(fromIndex))
+                if (_currentBoard.IsSideToMovePiece(fromIndex))
                 {
                     // loop the ending squares through all the squares 
                     for (var toIndex = 0; toIndex < Board.SquareNo; toIndex++)
                     {
                         // try to generate the move
-                        var move = currentBoard[fromIndex].GenerateMove(currentBoard, fromIndex, toIndex);
+                        var move = _currentBoard[fromIndex].GenerateMove(_currentBoard, fromIndex, toIndex);
                         if (move != null) { _possibleMoves.Add(move); }
                     }
                 }
@@ -569,7 +563,7 @@ namespace ChessEngine.Models
             }
 
             // if it's draw by 50-move rule
-            if (currentBoard.Status.Ply >= 100)
+            if (_currentBoard.Status.Ply >= 100)
             {
                 _status = GameStatus.Draw50Move;
                 return;
@@ -591,7 +585,7 @@ namespace ChessEngine.Models
         /// </summary>
         private void AddHistoryHash()
         {
-            var hash = currentBoard.GetHashCode();
+            var hash = _currentBoard.GetHashCode();
 
             // if the hash exists increment the frequency, otherwise add the hash with frequency 1
             _historyHashes[hash] = _historyHashes.ContainsKey(hash) ? _historyHashes[hash] + 1 : 1;
@@ -602,7 +596,7 @@ namespace ChessEngine.Models
         /// </summary>
         private void RemoveHistoryHash()
         {
-            var hash = currentBoard.GetHashCode();
+            var hash = _currentBoard.GetHashCode();
             var freq = _historyHashes[hash];
 
             // if the frequency is more than 1 decrement it, otherwise remove the hash
@@ -626,7 +620,7 @@ namespace ChessEngine.Models
             var captures = new Dictionary<Type, int>();
 
             // loop through the move history and get the captured pieces from each move until the current board is reached
-            for (var moveIndex = 0; moveIndex < currentBoardIndex; moveIndex++)
+            for (var moveIndex = 0; moveIndex < _currentBoardIndex; moveIndex++)
             {
                 Piece capture;
                 if ((capture = _moveHistory[moveIndex].Capture) == null) continue;
@@ -645,7 +639,7 @@ namespace ChessEngine.Models
         /// <returns></returns>
         private bool IsCheck()
         {
-            return currentBoard.Status.WhiteTurn ? currentBoard.WhiteKingInCheck() : currentBoard.BlackKingInCheck();
+            return _currentBoard.Status.WhiteTurn ? _currentBoard.WhiteKingInCheck() : _currentBoard.BlackKingInCheck();
         }
 
         /// <summary>
@@ -666,9 +660,9 @@ namespace ChessEngine.Models
             // loop through the squares
             for (var sqIndex = 0; sqIndex < Board.SquareNo; sqIndex++)
             {
-                if (currentBoard[sqIndex] != null)
+                if (_currentBoard[sqIndex] != null)
                 {
-                    if (currentBoard[sqIndex] is WhiteKnight)
+                    if (_currentBoard[sqIndex] is WhiteKnight)
                     {
                         // if there is more than one White Knight there is no draw by insufficient material
                         if (N) { return false; }
@@ -678,7 +672,7 @@ namespace ChessEngine.Models
                         continue;
                     }
 
-                    if (currentBoard[sqIndex] is WhiteBishop)
+                    if (_currentBoard[sqIndex] is WhiteBishop)
                     {
                         // if there is more than one White Bishop there is no draw by insufficient material
                         if (B) { return false; }
@@ -691,7 +685,7 @@ namespace ChessEngine.Models
                         continue;
                     }
 
-                    if (currentBoard[sqIndex] is BlackKnight)
+                    if (_currentBoard[sqIndex] is BlackKnight)
                     {
                         // if there is more than one Black Knight there is no draw by insufficient material
                         if (n) { return false; }
@@ -701,7 +695,7 @@ namespace ChessEngine.Models
                         continue;
                     }
 
-                    if (currentBoard[sqIndex] is BlackBishop)
+                    if (_currentBoard[sqIndex] is BlackBishop)
                     {
                         // if there are more than one Black Bishop there is no draw by insufficient material
                         if (b) { return false; }
@@ -715,7 +709,7 @@ namespace ChessEngine.Models
                     }
 
                     // there will be always the King
-                    if (currentBoard[sqIndex] is IKing) { continue; }
+                    if (_currentBoard[sqIndex] is IKing) { continue; }
 
                     // if there is a piece which is not Bishop, Knight or King there is no draw by insufficient material
                     return false;

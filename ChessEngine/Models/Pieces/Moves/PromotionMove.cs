@@ -14,6 +14,7 @@ namespace ChessEngine.Models.Pieces.Moves
         /// The piece pawn promotes to.
         /// </summary>
         private Piece _promotionPiece;
+        
         /// <summary>
         /// The pawn which is promoted.
         /// </summary>
@@ -62,8 +63,6 @@ namespace ChessEngine.Models.Pieces.Moves
         {
             capture = piece;
         }
-
-
 
         /// <summary>
         /// Constructor.

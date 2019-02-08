@@ -2,66 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b447e5-1dd5-4b0a-8acd-b2c4886fdee6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Logic/OpponentsInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Constants/OpponentsSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Events/CancelMoveEventArgs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Events/MoveEventArgs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Interfaces/Interfaces.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackBishop.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackKing.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackKnight.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackPawn.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackPiece.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackQueen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Black/BlackRook.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Board.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Move.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/CastlingMove.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/EnPassantCaptureMove.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/PromotionMove.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Piece.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteBishop.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKing.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKnight.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhitePawn.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhitePiece.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteQueen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteRook.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChessEngine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Builders/BoardBuilder.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/ChessEngine.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Extensions/BoardExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Extensions/PieceExtension.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Extensions/PositionExtension.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Interfaces/IBoardBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Interfaces/IGameLogic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Interfaces/IPieceActionLogic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Logic/GameLogic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Logic/PieceActionLogic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Board.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessEngine/Logic/OpponentsInfo.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/Models/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Interfaces/IPiece.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Movement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Bishop.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/King.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Knight.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Pawn.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Queen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Pieces/Rook.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Models/Position.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/Utilities/BoardUtilities.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/ChessEngine.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/Debug/netcoreapp2.1/ChessEngine.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessEngine/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChessEngine/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,133 +15,133 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Game.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2219">
-              <caret line="422" column="30" selection-start-line="422" selection-start-column="30" selection-end-line="422" selection-end-column="30" />
+            <state relative-caret-position="319">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
               <folding>
-                <marker date="1549606548984" expanded="false" signature="6:296" ph="..." />
-                <marker date="1549606548984" expanded="true" signature="326:25052" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="333:398" ph="/// Implements a chess game. ... " />
-                <marker date="1549606548984" expanded="true" signature="420:24746" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="435:504" ph="/// Mean history length. ... " />
-                <marker date="1549606548984" expanded="true" signature="571:650" ph="/// Maximum possible moves number. ... " />
-                <marker date="1549606548984" expanded="true" signature="708:785" ph="/// Current board configuration. ... " />
-                <marker date="1549606548984" expanded="true" signature="839:908" ph="/// Current board index. ... " />
-                <marker date="1549606548984" expanded="true" signature="965:1027" ph="/// Move history. ... " />
-                <marker date="1549606548984" expanded="true" signature="1086:1154" ph="/// Status of the game. ... " />
-                <marker date="1549606548984" expanded="true" signature="1208:1305" ph="/// List of the possible moves of the current board. ... " />
-                <marker date="1549606548984" expanded="true" signature="1366:1516" ph="/// Contains pairs consisting of a board hash and the frequency of that board in the history of the game. ... " />
-                <marker date="1549606548984" expanded="true" signature="1579:1641" ph="/// Moving event. ... " />
-                <marker date="1549606548984" expanded="true" signature="1713:1774" ph="/// Moved event. ... " />
-                <marker date="1549606548984" expanded="true" signature="1839:1908" ph="/// Going forward event. ... " />
-                <marker date="1549606548984" expanded="true" signature="1986:2054" ph="/// Gone forward event. ... " />
-                <marker date="1549606548984" expanded="true" signature="2125:2191" ph="/// Going back event. ... " />
-                <marker date="1549606548984" expanded="true" signature="2266:2331" ph="/// Gone back event. ... " />
-                <marker date="1549606548984" expanded="true" signature="2399:2464" ph="/// Modifying event. ... " />
-                <marker date="1549606548984" expanded="true" signature="2535:2599" ph="/// Modified event. ... " />
-                <marker date="1549606548984" expanded="true" signature="2652:2715" ph="/// Loading event. ... " />
-                <marker date="1549606548984" expanded="true" signature="2784:2866" ph="/// Board configuration loaded event. ... " />
-                <marker date="1549606548984" expanded="true" signature="2935:3022" ph="/// Game board configuration loaded event. ... " />
-                <marker date="1549606548984" expanded="true" signature="3095:3175" ph="/// Game move section loaded event. ... " />
-                <marker date="1549606548984" expanded="true" signature="3242:3352" ph="/// Raises the Moving event. ... " />
-                <marker date="1549606548984" expanded="true" signature="3415:3472" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="3481:3590" ph="/// Raises the Moved event. ... " />
-                <marker date="1549606548984" expanded="true" signature="3646:3702" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="3711:3827" ph="/// Raises the GoingForward event. ... " />
-                <marker date="1549606548984" expanded="true" signature="3896:3959" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="3968:4083" ph="/// Raises the GoneForward event. ... " />
-                <marker date="1549606548984" expanded="true" signature="4145:4207" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="4216:4329" ph="/// Raises the GoingBack event. ... " />
-                <marker date="1549606548984" expanded="true" signature="4395:4455" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="4464:4576" ph="/// Raises the GoneBack event. ... " />
-                <marker date="1549606548984" expanded="true" signature="4635:4694" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="4704:4817" ph="/// Raises the Modifying event. ... " />
-                <marker date="1549606548984" expanded="true" signature="4879:4939" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="4948:5060" ph="/// Raises the Modified event. ... " />
-                <marker date="1549606548984" expanded="true" signature="5115:5174" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="5184:5295" ph="/// Raises the Loading event. ... " />
-                <marker date="1549606548984" expanded="true" signature="5364:5422" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="5440:5568" ph="/// Raises the BoardConfigurationLoaded event. ... " />
-                <marker date="1549606548984" expanded="true" signature="5648:5723" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="5741:5873" ph="/// Raises the GameBoardConfigurationLoaded event. ... " />
-                <marker date="1549606548984" expanded="true" signature="5957:6036" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="6054:6179" ph="/// Raises the GameMoveSectionLoaded event. ... " />
-                <marker date="1549606548984" expanded="true" signature="6256:6328" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="6338:6406" ph="/// Promotion delegate. ... " />
-                <marker date="1549606548984" expanded="true" signature="6470:6599" ph="/// True if the current board configuration is the last in history, false otherwise. ... " />
-                <marker date="1549606548984" expanded="true" signature="6680:6810" ph="/// True if the current board configuration is the first in history, false otherwise. ... " />
-                <marker date="1549606548984" expanded="true" signature="6875:6967" ph="/// True if the game is ended, false otherwise. ... " />
-                <marker date="1549606548984" expanded="true" signature="7069:7167" ph="/// True if the game is initialized, false otherwise. ... " />
-                <marker date="1549606548984" expanded="true" signature="7236:7330" ph="/// Gets or sets the current board configuration. ... " />
-                <marker date="1549606548984" expanded="true" signature="7364:7723" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="7432:7713" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="7733:7814" ph="/// Gets the list of possible moves. ... " />
-                <marker date="1549606548984" expanded="true" signature="7886:7956" ph="/// Gets the game status. ... " />
-                <marker date="1549606548984" expanded="true" signature="8011:8072" ph="/// Constructor. ... " />
-                <marker date="1549606548984" expanded="true" signature="8094:8313" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="8323:8729" ph="/// Gets the valid move based on starting square and ending square.  ... " />
-                <marker date="1549606548984" expanded="true" signature="8795:9323" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="8959:9287" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="9029:9273" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="9108:9221" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="9333:9501" ph="/// Gets a move which if it is made, it will probably end the game in a draw by repetition. ... " />
-                <marker date="1549606548984" expanded="true" signature="10351:10545" ph="/// Makes a move. ... " />
-                <marker date="1549606548984" expanded="true" signature="10581:12484" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="10808:10996" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="10882:10982" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="11458:11587" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="11827:11922" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="12494:12589" ph="/// Go to the next board configuration in history. ... " />
-                <marker date="1549606548984" expanded="true" signature="12616:13692" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="12700:13682" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="13702:13801" ph="/// Go to the previous board configuration in history. ... " />
-                <marker date="1549606548984" expanded="true" signature="13832:14903" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="13918:14893" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="14913:15008" ph="/// Go to the last board configuration in history. ... " />
-                <marker date="1549606548984" expanded="true" signature="15039:15901" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="15398:15809" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="15911:16007" ph="/// Go to the first board configuration in history. ... " />
-                <marker date="1549606548984" expanded="true" signature="16039:16912" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="16400:16820" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="16922:17021" ph="/// Generates the possible moves of the current board. ... " />
-                <marker date="1549606548984" expanded="true" signature="17058:17904" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="17278:17894" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="17418:17880" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="17587:17862" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="17914:17983" ph="/// Set the game status. ... " />
-                <marker date="1549606548984" expanded="true" signature="18016:19004" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="18134:18269" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="18369:18484" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="18577:18678" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="18770:18875" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="19014:19102" ph="/// Adds the current board hash to history. ... " />
-                <marker date="1549606548984" expanded="true" signature="19140:19411" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="19421:19514" ph="/// Removes the current board hash from history. ... " />
-                <marker date="1549606548984" expanded="true" signature="19555:19952" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="19775:19852" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="19869:19942" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="19962:20136" ph="/// Gets the captured pieces. ... " />
-                <marker date="1549606548984" expanded="true" signature="20193:20917" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="20463:20877" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="20927:21045" ph="/// Verifies the current board for check. ... " />
-                <marker date="1549606548984" expanded="true" signature="21076:21214" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="21224:21366" ph="/// Verifies the current board for draw by insufficient material. ... " />
-                <marker date="1549606548984" expanded="true" signature="21416:24740" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="21439:21788" ph="/* &quot;N&quot; is true if there is one White Knight ... */" />
-                <marker date="1549606548984" expanded="true" signature="21982:23955" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="22047:23941" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="22127:22398" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="22461:22853" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="22916:23187" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="23250:23643" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="24037:24094" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="24229:24286" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="24421:24478" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="24646:24703" ph="{...}" />
-                <marker date="1549606548984" expanded="true" signature="24752:24817" ph="/// Game status enumeration. ... " />
-                <marker date="1549606548984" expanded="true" signature="24945:25005" ph="/// Promotion delegate. ... " />
+                <marker date="1549608833951" expanded="false" signature="6:296" ph="..." />
+                <marker date="1549608833951" expanded="true" signature="326:25059" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="333:398" ph="/// Implements a chess game. ... " />
+                <marker date="1549608833951" expanded="true" signature="420:24753" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="435:504" ph="/// Mean history length. ... " />
+                <marker date="1549608833951" expanded="true" signature="571:650" ph="/// Maximum possible moves number. ... " />
+                <marker date="1549608833951" expanded="true" signature="708:785" ph="/// Current board configuration. ... " />
+                <marker date="1549608833951" expanded="true" signature="840:909" ph="/// Current board index. ... " />
+                <marker date="1549608833951" expanded="true" signature="966:1028" ph="/// Move history. ... " />
+                <marker date="1549608833951" expanded="true" signature="1087:1155" ph="/// Status of the game. ... " />
+                <marker date="1549608833951" expanded="true" signature="1209:1306" ph="/// List of the possible moves of the current board. ... " />
+                <marker date="1549608833951" expanded="true" signature="1367:1517" ph="/// Contains pairs consisting of a board hash and the frequency of that board in the history of the game. ... " />
+                <marker date="1549608833951" expanded="true" signature="1580:1642" ph="/// Moving event. ... " />
+                <marker date="1549608833951" expanded="true" signature="1714:1775" ph="/// Moved event. ... " />
+                <marker date="1549608833951" expanded="true" signature="1840:1909" ph="/// Going forward event. ... " />
+                <marker date="1549608833951" expanded="true" signature="1987:2055" ph="/// Gone forward event. ... " />
+                <marker date="1549608833951" expanded="true" signature="2126:2192" ph="/// Going back event. ... " />
+                <marker date="1549608833951" expanded="true" signature="2267:2332" ph="/// Gone back event. ... " />
+                <marker date="1549608833951" expanded="true" signature="2400:2465" ph="/// Modifying event. ... " />
+                <marker date="1549608833951" expanded="true" signature="2536:2600" ph="/// Modified event. ... " />
+                <marker date="1549608833951" expanded="true" signature="2653:2716" ph="/// Loading event. ... " />
+                <marker date="1549608833951" expanded="true" signature="2785:2867" ph="/// Board configuration loaded event. ... " />
+                <marker date="1549608833951" expanded="true" signature="2936:3023" ph="/// Game board configuration loaded event. ... " />
+                <marker date="1549608833951" expanded="true" signature="3096:3176" ph="/// Game move section loaded event. ... " />
+                <marker date="1549608833951" expanded="true" signature="3243:3353" ph="/// Raises the Moving event. ... " />
+                <marker date="1549608833951" expanded="true" signature="3416:3473" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="3482:3591" ph="/// Raises the Moved event. ... " />
+                <marker date="1549608833951" expanded="true" signature="3647:3703" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="3712:3828" ph="/// Raises the GoingForward event. ... " />
+                <marker date="1549608833951" expanded="true" signature="3897:3960" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="3969:4084" ph="/// Raises the GoneForward event. ... " />
+                <marker date="1549608833951" expanded="true" signature="4146:4208" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="4217:4330" ph="/// Raises the GoingBack event. ... " />
+                <marker date="1549608833951" expanded="true" signature="4396:4456" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="4465:4577" ph="/// Raises the GoneBack event. ... " />
+                <marker date="1549608833951" expanded="true" signature="4636:4695" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="4705:4818" ph="/// Raises the Modifying event. ... " />
+                <marker date="1549608833951" expanded="true" signature="4880:4940" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="4949:5061" ph="/// Raises the Modified event. ... " />
+                <marker date="1549608833951" expanded="true" signature="5116:5175" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="5185:5296" ph="/// Raises the Loading event. ... " />
+                <marker date="1549608833951" expanded="true" signature="5365:5423" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="5441:5569" ph="/// Raises the BoardConfigurationLoaded event. ... " />
+                <marker date="1549608833951" expanded="true" signature="5649:5724" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="5742:5874" ph="/// Raises the GameBoardConfigurationLoaded event. ... " />
+                <marker date="1549608833951" expanded="true" signature="5958:6037" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="6055:6180" ph="/// Raises the GameMoveSectionLoaded event. ... " />
+                <marker date="1549608833951" expanded="true" signature="6257:6329" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="6339:6407" ph="/// Promotion delegate. ... " />
+                <marker date="1549608833951" expanded="true" signature="6471:6600" ph="/// True if the current board configuration is the last in history, false otherwise. ... " />
+                <marker date="1549608833951" expanded="true" signature="6681:6811" ph="/// True if the current board configuration is the first in history, false otherwise. ... " />
+                <marker date="1549608833951" expanded="true" signature="6876:6968" ph="/// True if the game is ended, false otherwise. ... " />
+                <marker date="1549608833951" expanded="true" signature="7070:7168" ph="/// True if the game is initialized, false otherwise. ... " />
+                <marker date="1549608833951" expanded="true" signature="7238:7332" ph="/// Gets or sets the current board configuration. ... " />
+                <marker date="1549608833951" expanded="true" signature="7366:7727" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="7435:7717" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="7737:7818" ph="/// Gets the list of possible moves. ... " />
+                <marker date="1549608833951" expanded="true" signature="7895:7965" ph="/// Gets the game status. ... " />
+                <marker date="1549608833951" expanded="true" signature="8020:8081" ph="/// Constructor. ... " />
+                <marker date="1549608833951" expanded="true" signature="8103:8322" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="8332:8738" ph="/// Gets the valid move based on starting square and ending square.  ... " />
+                <marker date="1549608833951" expanded="true" signature="8804:9332" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="8968:9296" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="9038:9282" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="9117:9230" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="9342:9510" ph="/// Gets a move which if it is made, it will probably end the game in a draw by repetition. ... " />
+                <marker date="1549608833951" expanded="true" signature="10360:10554" ph="/// Makes a move. ... " />
+                <marker date="1549608833951" expanded="true" signature="10590:12472" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="10817:11005" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="10891:10991" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="11451:11580" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="11824:11909" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="12482:12577" ph="/// Go to the next board configuration in history. ... " />
+                <marker date="1549608833951" expanded="true" signature="12604:13681" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="12688:13671" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="13691:13790" ph="/// Go to the previous board configuration in history. ... " />
+                <marker date="1549608833951" expanded="true" signature="13821:14893" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="13907:14883" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="14903:14998" ph="/// Go to the last board configuration in history. ... " />
+                <marker date="1549608833951" expanded="true" signature="15029:15892" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="15388:15800" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="15902:15998" ph="/// Go to the first board configuration in history. ... " />
+                <marker date="1549608833951" expanded="true" signature="16030:16904" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="16391:16812" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="16914:17013" ph="/// Generates the possible moves of the current board. ... " />
+                <marker date="1549608833951" expanded="true" signature="17050:17899" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="17270:17889" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="17411:17875" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="17580:17857" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="17909:17978" ph="/// Set the game status. ... " />
+                <marker date="1549608833951" expanded="true" signature="18011:19000" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="18129:18264" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="18364:18479" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="18573:18674" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="18766:18871" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="19010:19098" ph="/// Adds the current board hash to history. ... " />
+                <marker date="1549608833951" expanded="true" signature="19136:19408" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="19418:19511" ph="/// Removes the current board hash from history. ... " />
+                <marker date="1549608833951" expanded="true" signature="19552:19950" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="19773:19850" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="19867:19940" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="19960:20134" ph="/// Gets the captured pieces. ... " />
+                <marker date="1549608833951" expanded="true" signature="20191:20915" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="20461:20875" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="20925:21043" ph="/// Verifies the current board for check. ... " />
+                <marker date="1549608833951" expanded="true" signature="21074:21215" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="21225:21367" ph="/// Verifies the current board for draw by insufficient material. ... " />
+                <marker date="1549608833951" expanded="true" signature="21417:24747" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="21440:21789" ph="/* &quot;N&quot; is true if there is one White Knight ... */" />
+                <marker date="1549608833951" expanded="true" signature="21983:23962" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="22049:23948" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="22130:22401" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="22465:22857" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="22921:23192" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="23256:23649" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="24044:24101" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="24236:24293" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="24428:24485" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="24653:24710" ph="{...}" />
+                <marker date="1549608833951" expanded="true" signature="24759:24824" ph="/// Game status enumeration. ... " />
+                <marker date="1549608833951" expanded="true" signature="24952:25012" ph="/// Promotion delegate. ... " />
               </folding>
             </state>
           </provider>
@@ -218,58 +162,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-410">
-              <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-              <folding>
-                <marker date="1549608361107" expanded="false" signature="6:234" ph="..." />
-                <marker date="1549608361107" expanded="true" signature="263:8256" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="270:352" ph="/// A human player playing against an engine. ... " />
-                <marker date="1549608361107" expanded="true" signature="381:7961" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="396:455" ph="/// The model. ... " />
-                <marker date="1549608361107" expanded="true" signature="495:631" ph="/// True if the game is in navigational mode (using next/prev/first/last), false otherwise. ... " />
-                <marker date="1549608361107" expanded="true" signature="671:742" ph="/// The background worker. ... " />
-                <marker date="1549608361107" expanded="true" signature="801:900" ph="/// True to if the model loads moves, false otherwise. ... " />
-                <marker date="1549608361107" expanded="true" signature="952:1043" ph="/// True if it's engine turn, false otherwise. ... " />
-                <marker date="1549608361107" expanded="true" signature="1266:1547" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="1557:1646" ph="/// Force engine to start thinking and move. ... " />
-                <marker date="1549608361107" expanded="true" signature="1682:2238" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="1891:2228" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="2248:2320" ph="/// Aborts engine thinking. ... " />
-                <marker date="1549608361107" expanded="true" signature="2377:2532" ph="/// Starts the engine thinking. ... " />
-                <marker date="1549608361107" expanded="true" signature="2629:2831" ph="/// Called when the engine ended thinking. ... " />
-                <marker date="1549608361107" expanded="true" signature="2930:3860" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="2956:3349" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="3077:3335" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="3391:3610" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="3643:3850" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="3870:3970" ph="/// Gets or sets the model. ... " />
-                <marker date="1549608361107" expanded="true" signature="3996:4822" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="4048:4812" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="4164:4798" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="4888:5541" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="5058:5237" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="5346:5531" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="5610:5762" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="5827:5979" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="6060:6144" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="6229:6402" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="6480:6590" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="6600:6736" ph="/// Gets the engine input parameters from the current game. ... " />
-                <marker date="1549608361107" expanded="true" signature="6797:7272" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="6919:6997" ph="/* set the current board FEN ... */" />
-                <marker date="1549608361107" expanded="true" signature="7282:7360" ph="/// Dispose the engine resources. ... " />
-                <marker date="1549608361107" expanded="true" signature="7398:7955" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="7472:7945" ph="{...}" />
-                <marker date="1549608361107" expanded="true" signature="7967:8057" ph="/// Helper class, stores the engine input parameters. ... " />
-                <marker date="1549608361107" expanded="true" signature="8096:8254" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/OpponentsSettings.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -278,56 +170,6 @@
               <folding>
                 <marker date="1549606631198" expanded="true" signature="38:98" ph="{...}" />
                 <marker date="1549606631198" expanded="true" signature="75:96" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/OpponentsInfo.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1136">
-              <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
-              <folding>
-                <marker date="1549608297573" expanded="true" signature="6:54" ph="..." />
-                <marker date="1549608297573" expanded="true" signature="83:5620" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="90:175" ph="/// Stores information about the game opponents. ... " />
-                <marker date="1549608297573" expanded="true" signature="242:5617" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="257:316" ph="/// The model. ... " />
-                <marker date="1549608297573" expanded="true" signature="354:417" ph="/// The opponents. ... " />
-                <marker date="1549608297573" expanded="true" signature="465:538" ph="/// The opponents info text. ... " />
-                <marker date="1549608297573" expanded="true" signature="590:649" ph="/// The model. ... " />
-                <marker date="1549608297573" expanded="true" signature="675:984" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="727:974" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="843:960" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="994:1095" ph="/// The opponents info text. ... " />
-                <marker date="1549608297573" expanded="true" signature="1135:1436" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="1207:1426" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="1269:1412" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="1446:1518" ph="/// Property changed event. ... " />
-                <marker date="1549608297573" expanded="true" signature="1594:1721" ph="/// Raises property changed event. ... " />
-                <marker date="1549608297573" expanded="true" signature="1781:1888" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="1898:1959" ph="/// Constructor. ... " />
-                <marker date="1549608297573" expanded="true" signature="1990:2536" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="2091:2167" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="2234:2315" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="2546:2700" ph="/// Constructor. ... " />
-                <marker date="1549608297573" expanded="true" signature="2772:2825" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="2907:4226" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="3103:3484" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="3630:4016" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="4079:4216" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="4236:4314" ph="/// Sets the opponents info text. ... " />
-                <marker date="1549608297573" expanded="true" signature="4358:4796" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="4426:4519" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="4586:4786" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="4806:4929" ph="/// Force the opponent engine to move, if the game is not in two-players mode. ... " />
-                <marker date="1549608297573" expanded="true" signature="4963:5067" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="5077:5168" ph="/// True if it's engine turn, false otherwise. ... " />
-                <marker date="1549608297573" expanded="true" signature="5195:5356" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="5221:5346" ph="{...}" />
-                <marker date="1549608297573" expanded="true" signature="5366:5437" ph="/// Release the resources. ... " />
-                <marker date="1549608297573" expanded="true" signature="5493:5611" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -348,6 +190,7 @@
       <find>MeanHistoryLength</find>
       <find>FEN</find>
       <find>BackgroundWorker</find>
+      <find>dee</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -368,7 +211,6 @@
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKnight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteKing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/White/WhiteBishop.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Logic/OpponentsInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Piece.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Move.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Events/MoveEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
@@ -386,7 +228,6 @@
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Interfaces/Interfaces.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/BoardConstants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Game.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChessEngine/Models/Pieces/Moves/EnPassantCaptureMove.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -438,11 +279,11 @@
         <option value="$PROJECT_DIR$/ChessEngine/Models/Events/MoveEventArgs.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Models/MoveEvents.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Models/Events/CancelMoveEventArgs.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Models/Game.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Models/Constants/OpponentsSettings.cs" />
         <option value="$PROJECT_DIR$/ChessEngine/Logic/OpponentsInfo.cs" />
-        <option value="$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs" />
         <option value="$PROJECT_DIR$/ChessEngine.Tests/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs" />
+        <option value="$PROJECT_DIR$/ChessEngine/Models/Game.cs" />
       </list>
     </option>
   </component>
@@ -477,7 +318,7 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
               <item name="ChessEngine" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Logic" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Models" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -529,12 +370,12 @@
       <workItem from="1549601905342" duration="69000" />
       <workItem from="1549601999696" duration="34000" />
       <workItem from="1549602108038" duration="2846000" />
-      <workItem from="1549605448396" duration="1946000" />
+      <workItem from="1549605448396" duration="2224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13303000" />
+    <option name="totallyTimeSpent" value="13581000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,7 +388,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28898427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -566,7 +406,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.06527778" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.11666667" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1414,151 +1254,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/OpponentsSettings.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1549606631198" expanded="true" signature="38:98" ph="{...}" />
-            <marker date="1549606631198" expanded="true" signature="75:96" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Valil.Chess.WinFX/Valil.Chess.Opponents/HumanVsWebService.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Game.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2219">
-          <caret line="422" column="30" selection-start-line="422" selection-start-column="30" selection-end-line="422" selection-end-column="30" />
-          <folding>
-            <marker date="1549606548984" expanded="false" signature="6:296" ph="..." />
-            <marker date="1549606548984" expanded="true" signature="326:25052" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="333:398" ph="/// Implements a chess game. ... " />
-            <marker date="1549606548984" expanded="true" signature="420:24746" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="435:504" ph="/// Mean history length. ... " />
-            <marker date="1549606548984" expanded="true" signature="571:650" ph="/// Maximum possible moves number. ... " />
-            <marker date="1549606548984" expanded="true" signature="708:785" ph="/// Current board configuration. ... " />
-            <marker date="1549606548984" expanded="true" signature="839:908" ph="/// Current board index. ... " />
-            <marker date="1549606548984" expanded="true" signature="965:1027" ph="/// Move history. ... " />
-            <marker date="1549606548984" expanded="true" signature="1086:1154" ph="/// Status of the game. ... " />
-            <marker date="1549606548984" expanded="true" signature="1208:1305" ph="/// List of the possible moves of the current board. ... " />
-            <marker date="1549606548984" expanded="true" signature="1366:1516" ph="/// Contains pairs consisting of a board hash and the frequency of that board in the history of the game. ... " />
-            <marker date="1549606548984" expanded="true" signature="1579:1641" ph="/// Moving event. ... " />
-            <marker date="1549606548984" expanded="true" signature="1713:1774" ph="/// Moved event. ... " />
-            <marker date="1549606548984" expanded="true" signature="1839:1908" ph="/// Going forward event. ... " />
-            <marker date="1549606548984" expanded="true" signature="1986:2054" ph="/// Gone forward event. ... " />
-            <marker date="1549606548984" expanded="true" signature="2125:2191" ph="/// Going back event. ... " />
-            <marker date="1549606548984" expanded="true" signature="2266:2331" ph="/// Gone back event. ... " />
-            <marker date="1549606548984" expanded="true" signature="2399:2464" ph="/// Modifying event. ... " />
-            <marker date="1549606548984" expanded="true" signature="2535:2599" ph="/// Modified event. ... " />
-            <marker date="1549606548984" expanded="true" signature="2652:2715" ph="/// Loading event. ... " />
-            <marker date="1549606548984" expanded="true" signature="2784:2866" ph="/// Board configuration loaded event. ... " />
-            <marker date="1549606548984" expanded="true" signature="2935:3022" ph="/// Game board configuration loaded event. ... " />
-            <marker date="1549606548984" expanded="true" signature="3095:3175" ph="/// Game move section loaded event. ... " />
-            <marker date="1549606548984" expanded="true" signature="3242:3352" ph="/// Raises the Moving event. ... " />
-            <marker date="1549606548984" expanded="true" signature="3415:3472" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="3481:3590" ph="/// Raises the Moved event. ... " />
-            <marker date="1549606548984" expanded="true" signature="3646:3702" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="3711:3827" ph="/// Raises the GoingForward event. ... " />
-            <marker date="1549606548984" expanded="true" signature="3896:3959" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="3968:4083" ph="/// Raises the GoneForward event. ... " />
-            <marker date="1549606548984" expanded="true" signature="4145:4207" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="4216:4329" ph="/// Raises the GoingBack event. ... " />
-            <marker date="1549606548984" expanded="true" signature="4395:4455" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="4464:4576" ph="/// Raises the GoneBack event. ... " />
-            <marker date="1549606548984" expanded="true" signature="4635:4694" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="4704:4817" ph="/// Raises the Modifying event. ... " />
-            <marker date="1549606548984" expanded="true" signature="4879:4939" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="4948:5060" ph="/// Raises the Modified event. ... " />
-            <marker date="1549606548984" expanded="true" signature="5115:5174" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="5184:5295" ph="/// Raises the Loading event. ... " />
-            <marker date="1549606548984" expanded="true" signature="5364:5422" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="5440:5568" ph="/// Raises the BoardConfigurationLoaded event. ... " />
-            <marker date="1549606548984" expanded="true" signature="5648:5723" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="5741:5873" ph="/// Raises the GameBoardConfigurationLoaded event. ... " />
-            <marker date="1549606548984" expanded="true" signature="5957:6036" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="6054:6179" ph="/// Raises the GameMoveSectionLoaded event. ... " />
-            <marker date="1549606548984" expanded="true" signature="6256:6328" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="6338:6406" ph="/// Promotion delegate. ... " />
-            <marker date="1549606548984" expanded="true" signature="6470:6599" ph="/// True if the current board configuration is the last in history, false otherwise. ... " />
-            <marker date="1549606548984" expanded="true" signature="6680:6810" ph="/// True if the current board configuration is the first in history, false otherwise. ... " />
-            <marker date="1549606548984" expanded="true" signature="6875:6967" ph="/// True if the game is ended, false otherwise. ... " />
-            <marker date="1549606548984" expanded="true" signature="7069:7167" ph="/// True if the game is initialized, false otherwise. ... " />
-            <marker date="1549606548984" expanded="true" signature="7236:7330" ph="/// Gets or sets the current board configuration. ... " />
-            <marker date="1549606548984" expanded="true" signature="7364:7723" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="7432:7713" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="7733:7814" ph="/// Gets the list of possible moves. ... " />
-            <marker date="1549606548984" expanded="true" signature="7886:7956" ph="/// Gets the game status. ... " />
-            <marker date="1549606548984" expanded="true" signature="8011:8072" ph="/// Constructor. ... " />
-            <marker date="1549606548984" expanded="true" signature="8094:8313" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="8323:8729" ph="/// Gets the valid move based on starting square and ending square.  ... " />
-            <marker date="1549606548984" expanded="true" signature="8795:9323" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="8959:9287" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="9029:9273" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="9108:9221" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="9333:9501" ph="/// Gets a move which if it is made, it will probably end the game in a draw by repetition. ... " />
-            <marker date="1549606548984" expanded="true" signature="10351:10545" ph="/// Makes a move. ... " />
-            <marker date="1549606548984" expanded="true" signature="10581:12484" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="10808:10996" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="10882:10982" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="11458:11587" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="11827:11922" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="12494:12589" ph="/// Go to the next board configuration in history. ... " />
-            <marker date="1549606548984" expanded="true" signature="12616:13692" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="12700:13682" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="13702:13801" ph="/// Go to the previous board configuration in history. ... " />
-            <marker date="1549606548984" expanded="true" signature="13832:14903" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="13918:14893" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="14913:15008" ph="/// Go to the last board configuration in history. ... " />
-            <marker date="1549606548984" expanded="true" signature="15039:15901" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="15398:15809" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="15911:16007" ph="/// Go to the first board configuration in history. ... " />
-            <marker date="1549606548984" expanded="true" signature="16039:16912" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="16400:16820" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="16922:17021" ph="/// Generates the possible moves of the current board. ... " />
-            <marker date="1549606548984" expanded="true" signature="17058:17904" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="17278:17894" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="17418:17880" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="17587:17862" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="17914:17983" ph="/// Set the game status. ... " />
-            <marker date="1549606548984" expanded="true" signature="18016:19004" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="18134:18269" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="18369:18484" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="18577:18678" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="18770:18875" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="19014:19102" ph="/// Adds the current board hash to history. ... " />
-            <marker date="1549606548984" expanded="true" signature="19140:19411" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="19421:19514" ph="/// Removes the current board hash from history. ... " />
-            <marker date="1549606548984" expanded="true" signature="19555:19952" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="19775:19852" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="19869:19942" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="19962:20136" ph="/// Gets the captured pieces. ... " />
-            <marker date="1549606548984" expanded="true" signature="20193:20917" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="20463:20877" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="20927:21045" ph="/// Verifies the current board for check. ... " />
-            <marker date="1549606548984" expanded="true" signature="21076:21214" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="21224:21366" ph="/// Verifies the current board for draw by insufficient material. ... " />
-            <marker date="1549606548984" expanded="true" signature="21416:24740" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="21439:21788" ph="/* &quot;N&quot; is true if there is one White Knight ... */" />
-            <marker date="1549606548984" expanded="true" signature="21982:23955" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="22047:23941" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="22127:22398" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="22461:22853" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="22916:23187" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="23250:23643" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="24037:24094" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="24229:24286" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="24421:24478" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="24646:24703" ph="{...}" />
-            <marker date="1549606548984" expanded="true" signature="24752:24817" ph="/// Game status enumeration. ... " />
-            <marker date="1549606548984" expanded="true" signature="24945:25005" ph="/// Promotion delegate. ... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1575,100 +1274,157 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2669">
+          <caret line="77" column="24" lean-forward="true" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/OpponentsInfo.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1136">
           <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Constants/OpponentsSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding>
-            <marker date="1549608297573" expanded="true" signature="6:54" ph="..." />
-            <marker date="1549608297573" expanded="true" signature="83:5620" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="90:175" ph="/// Stores information about the game opponents. ... " />
-            <marker date="1549608297573" expanded="true" signature="242:5617" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="257:316" ph="/// The model. ... " />
-            <marker date="1549608297573" expanded="true" signature="354:417" ph="/// The opponents. ... " />
-            <marker date="1549608297573" expanded="true" signature="465:538" ph="/// The opponents info text. ... " />
-            <marker date="1549608297573" expanded="true" signature="590:649" ph="/// The model. ... " />
-            <marker date="1549608297573" expanded="true" signature="675:984" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="727:974" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="843:960" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="994:1095" ph="/// The opponents info text. ... " />
-            <marker date="1549608297573" expanded="true" signature="1135:1436" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="1207:1426" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="1269:1412" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="1446:1518" ph="/// Property changed event. ... " />
-            <marker date="1549608297573" expanded="true" signature="1594:1721" ph="/// Raises property changed event. ... " />
-            <marker date="1549608297573" expanded="true" signature="1781:1888" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="1898:1959" ph="/// Constructor. ... " />
-            <marker date="1549608297573" expanded="true" signature="1990:2536" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="2091:2167" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="2234:2315" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="2546:2700" ph="/// Constructor. ... " />
-            <marker date="1549608297573" expanded="true" signature="2772:2825" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="2907:4226" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="3103:3484" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="3630:4016" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="4079:4216" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="4236:4314" ph="/// Sets the opponents info text. ... " />
-            <marker date="1549608297573" expanded="true" signature="4358:4796" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="4426:4519" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="4586:4786" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="4806:4929" ph="/// Force the opponent engine to move, if the game is not in two-players mode. ... " />
-            <marker date="1549608297573" expanded="true" signature="4963:5067" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="5077:5168" ph="/// True if it's engine turn, false otherwise. ... " />
-            <marker date="1549608297573" expanded="true" signature="5195:5356" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="5221:5346" ph="{...}" />
-            <marker date="1549608297573" expanded="true" signature="5366:5437" ph="/// Release the resources. ... " />
-            <marker date="1549608297573" expanded="true" signature="5493:5611" ph="{...}" />
+            <marker date="1549606631198" expanded="true" signature="38:98" ph="{...}" />
+            <marker date="1549606631198" expanded="true" signature="75:96" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChessEngine/Logic/HumanVsAI.cs">
+    <entry file="file://$PROJECT_DIR$/ChessEngine/Models/Game.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-410">
-          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+        <state relative-caret-position="319">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding>
-            <marker date="1549608361107" expanded="false" signature="6:234" ph="..." />
-            <marker date="1549608361107" expanded="true" signature="263:8256" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="270:352" ph="/// A human player playing against an engine. ... " />
-            <marker date="1549608361107" expanded="true" signature="381:7961" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="396:455" ph="/// The model. ... " />
-            <marker date="1549608361107" expanded="true" signature="495:631" ph="/// True if the game is in navigational mode (using next/prev/first/last), false otherwise. ... " />
-            <marker date="1549608361107" expanded="true" signature="671:742" ph="/// The background worker. ... " />
-            <marker date="1549608361107" expanded="true" signature="801:900" ph="/// True to if the model loads moves, false otherwise. ... " />
-            <marker date="1549608361107" expanded="true" signature="952:1043" ph="/// True if it's engine turn, false otherwise. ... " />
-            <marker date="1549608361107" expanded="true" signature="1266:1547" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="1557:1646" ph="/// Force engine to start thinking and move. ... " />
-            <marker date="1549608361107" expanded="true" signature="1682:2238" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="1891:2228" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="2248:2320" ph="/// Aborts engine thinking. ... " />
-            <marker date="1549608361107" expanded="true" signature="2377:2532" ph="/// Starts the engine thinking. ... " />
-            <marker date="1549608361107" expanded="true" signature="2629:2831" ph="/// Called when the engine ended thinking. ... " />
-            <marker date="1549608361107" expanded="true" signature="2930:3860" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="2956:3349" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="3077:3335" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="3391:3610" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="3643:3850" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="3870:3970" ph="/// Gets or sets the model. ... " />
-            <marker date="1549608361107" expanded="true" signature="3996:4822" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="4048:4812" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="4164:4798" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="4888:5541" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="5058:5237" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="5346:5531" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="5610:5762" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="5827:5979" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="6060:6144" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="6229:6402" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="6480:6590" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="6600:6736" ph="/// Gets the engine input parameters from the current game. ... " />
-            <marker date="1549608361107" expanded="true" signature="6797:7272" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="6919:6997" ph="/* set the current board FEN ... */" />
-            <marker date="1549608361107" expanded="true" signature="7282:7360" ph="/// Dispose the engine resources. ... " />
-            <marker date="1549608361107" expanded="true" signature="7398:7955" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="7472:7945" ph="{...}" />
-            <marker date="1549608361107" expanded="true" signature="7967:8057" ph="/// Helper class, stores the engine input parameters. ... " />
-            <marker date="1549608361107" expanded="true" signature="8096:8254" ph="{...}" />
+            <marker date="1549608833951" expanded="false" signature="6:296" ph="..." />
+            <marker date="1549608833951" expanded="true" signature="326:25059" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="333:398" ph="/// Implements a chess game. ... " />
+            <marker date="1549608833951" expanded="true" signature="420:24753" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="435:504" ph="/// Mean history length. ... " />
+            <marker date="1549608833951" expanded="true" signature="571:650" ph="/// Maximum possible moves number. ... " />
+            <marker date="1549608833951" expanded="true" signature="708:785" ph="/// Current board configuration. ... " />
+            <marker date="1549608833951" expanded="true" signature="840:909" ph="/// Current board index. ... " />
+            <marker date="1549608833951" expanded="true" signature="966:1028" ph="/// Move history. ... " />
+            <marker date="1549608833951" expanded="true" signature="1087:1155" ph="/// Status of the game. ... " />
+            <marker date="1549608833951" expanded="true" signature="1209:1306" ph="/// List of the possible moves of the current board. ... " />
+            <marker date="1549608833951" expanded="true" signature="1367:1517" ph="/// Contains pairs consisting of a board hash and the frequency of that board in the history of the game. ... " />
+            <marker date="1549608833951" expanded="true" signature="1580:1642" ph="/// Moving event. ... " />
+            <marker date="1549608833951" expanded="true" signature="1714:1775" ph="/// Moved event. ... " />
+            <marker date="1549608833951" expanded="true" signature="1840:1909" ph="/// Going forward event. ... " />
+            <marker date="1549608833951" expanded="true" signature="1987:2055" ph="/// Gone forward event. ... " />
+            <marker date="1549608833951" expanded="true" signature="2126:2192" ph="/// Going back event. ... " />
+            <marker date="1549608833951" expanded="true" signature="2267:2332" ph="/// Gone back event. ... " />
+            <marker date="1549608833951" expanded="true" signature="2400:2465" ph="/// Modifying event. ... " />
+            <marker date="1549608833951" expanded="true" signature="2536:2600" ph="/// Modified event. ... " />
+            <marker date="1549608833951" expanded="true" signature="2653:2716" ph="/// Loading event. ... " />
+            <marker date="1549608833951" expanded="true" signature="2785:2867" ph="/// Board configuration loaded event. ... " />
+            <marker date="1549608833951" expanded="true" signature="2936:3023" ph="/// Game board configuration loaded event. ... " />
+            <marker date="1549608833951" expanded="true" signature="3096:3176" ph="/// Game move section loaded event. ... " />
+            <marker date="1549608833951" expanded="true" signature="3243:3353" ph="/// Raises the Moving event. ... " />
+            <marker date="1549608833951" expanded="true" signature="3416:3473" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="3482:3591" ph="/// Raises the Moved event. ... " />
+            <marker date="1549608833951" expanded="true" signature="3647:3703" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="3712:3828" ph="/// Raises the GoingForward event. ... " />
+            <marker date="1549608833951" expanded="true" signature="3897:3960" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="3969:4084" ph="/// Raises the GoneForward event. ... " />
+            <marker date="1549608833951" expanded="true" signature="4146:4208" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="4217:4330" ph="/// Raises the GoingBack event. ... " />
+            <marker date="1549608833951" expanded="true" signature="4396:4456" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="4465:4577" ph="/// Raises the GoneBack event. ... " />
+            <marker date="1549608833951" expanded="true" signature="4636:4695" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="4705:4818" ph="/// Raises the Modifying event. ... " />
+            <marker date="1549608833951" expanded="true" signature="4880:4940" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="4949:5061" ph="/// Raises the Modified event. ... " />
+            <marker date="1549608833951" expanded="true" signature="5116:5175" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="5185:5296" ph="/// Raises the Loading event. ... " />
+            <marker date="1549608833951" expanded="true" signature="5365:5423" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="5441:5569" ph="/// Raises the BoardConfigurationLoaded event. ... " />
+            <marker date="1549608833951" expanded="true" signature="5649:5724" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="5742:5874" ph="/// Raises the GameBoardConfigurationLoaded event. ... " />
+            <marker date="1549608833951" expanded="true" signature="5958:6037" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="6055:6180" ph="/// Raises the GameMoveSectionLoaded event. ... " />
+            <marker date="1549608833951" expanded="true" signature="6257:6329" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="6339:6407" ph="/// Promotion delegate. ... " />
+            <marker date="1549608833951" expanded="true" signature="6471:6600" ph="/// True if the current board configuration is the last in history, false otherwise. ... " />
+            <marker date="1549608833951" expanded="true" signature="6681:6811" ph="/// True if the current board configuration is the first in history, false otherwise. ... " />
+            <marker date="1549608833951" expanded="true" signature="6876:6968" ph="/// True if the game is ended, false otherwise. ... " />
+            <marker date="1549608833951" expanded="true" signature="7070:7168" ph="/// True if the game is initialized, false otherwise. ... " />
+            <marker date="1549608833951" expanded="true" signature="7238:7332" ph="/// Gets or sets the current board configuration. ... " />
+            <marker date="1549608833951" expanded="true" signature="7366:7727" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="7435:7717" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="7737:7818" ph="/// Gets the list of possible moves. ... " />
+            <marker date="1549608833951" expanded="true" signature="7895:7965" ph="/// Gets the game status. ... " />
+            <marker date="1549608833951" expanded="true" signature="8020:8081" ph="/// Constructor. ... " />
+            <marker date="1549608833951" expanded="true" signature="8103:8322" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="8332:8738" ph="/// Gets the valid move based on starting square and ending square.  ... " />
+            <marker date="1549608833951" expanded="true" signature="8804:9332" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="8968:9296" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="9038:9282" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="9117:9230" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="9342:9510" ph="/// Gets a move which if it is made, it will probably end the game in a draw by repetition. ... " />
+            <marker date="1549608833951" expanded="true" signature="10360:10554" ph="/// Makes a move. ... " />
+            <marker date="1549608833951" expanded="true" signature="10590:12472" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="10817:11005" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="10891:10991" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="11451:11580" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="11824:11909" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="12482:12577" ph="/// Go to the next board configuration in history. ... " />
+            <marker date="1549608833951" expanded="true" signature="12604:13681" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="12688:13671" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="13691:13790" ph="/// Go to the previous board configuration in history. ... " />
+            <marker date="1549608833951" expanded="true" signature="13821:14893" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="13907:14883" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="14903:14998" ph="/// Go to the last board configuration in history. ... " />
+            <marker date="1549608833951" expanded="true" signature="15029:15892" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="15388:15800" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="15902:15998" ph="/// Go to the first board configuration in history. ... " />
+            <marker date="1549608833951" expanded="true" signature="16030:16904" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="16391:16812" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="16914:17013" ph="/// Generates the possible moves of the current board. ... " />
+            <marker date="1549608833951" expanded="true" signature="17050:17899" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="17270:17889" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="17411:17875" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="17580:17857" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="17909:17978" ph="/// Set the game status. ... " />
+            <marker date="1549608833951" expanded="true" signature="18011:19000" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="18129:18264" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="18364:18479" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="18573:18674" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="18766:18871" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="19010:19098" ph="/// Adds the current board hash to history. ... " />
+            <marker date="1549608833951" expanded="true" signature="19136:19408" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="19418:19511" ph="/// Removes the current board hash from history. ... " />
+            <marker date="1549608833951" expanded="true" signature="19552:19950" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="19773:19850" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="19867:19940" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="19960:20134" ph="/// Gets the captured pieces. ... " />
+            <marker date="1549608833951" expanded="true" signature="20191:20915" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="20461:20875" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="20925:21043" ph="/// Verifies the current board for check. ... " />
+            <marker date="1549608833951" expanded="true" signature="21074:21215" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="21225:21367" ph="/// Verifies the current board for draw by insufficient material. ... " />
+            <marker date="1549608833951" expanded="true" signature="21417:24747" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="21440:21789" ph="/* &quot;N&quot; is true if there is one White Knight ... */" />
+            <marker date="1549608833951" expanded="true" signature="21983:23962" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="22049:23948" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="22130:22401" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="22465:22857" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="22921:23192" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="23256:23649" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="24044:24101" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="24236:24293" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="24428:24485" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="24653:24710" ph="{...}" />
+            <marker date="1549608833951" expanded="true" signature="24759:24824" ph="/// Game status enumeration. ... " />
+            <marker date="1549608833951" expanded="true" signature="24952:25012" ph="/// Promotion delegate. ... " />
           </folding>
         </state>
       </provider>
