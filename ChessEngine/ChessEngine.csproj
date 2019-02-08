@@ -4,9 +4,4 @@
         <TargetFramework>netcoreapp2.1</TargetFramework>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="Builders" />
-      <Folder Include="Utilities" />
-    </ItemGroup>
-
 </Project>
